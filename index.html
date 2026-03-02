@@ -5,238 +5,301 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Denny Mathew | Senior Software Engineer</title>
 
+<!-- SEO -->
+<meta name="description" content="Portfolio of Denny Mathew, Senior Software Engineer specializing in Java, Spring Boot, Azure, Microservices, and Distributed Systems.">
+<link rel="canonical" href="https://dennymathew.me/">
+
+<!-- Social / Open Graph -->
+<meta property="og:title" content="Denny Mathew | Senior Software Engineer">
+<meta property="og:description" content="Designing scalable backend architectures & cloud‑native systems. Java • Spring Boot • Azure • Distributed Systems • DevOps">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dennymathew.me/">
+<meta property="og:image" content="https://dennymathew.me/og-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Denny Mathew | Senior Software Engineer">
+<meta name="twitter:description" content="Designing scalable backend architectures & cloud‑native systems.">
+<meta name="twitter:image" content="https://dennymathew.me/og-card.png">
+
+<!-- PWA/theme color hints -->
+<meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
+
+<!-- Performance: preconnect fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root{
-  --bg:#f8fafc;
-  --card:#ffffff;
-  --text:#0f172a;
-  --sub:#475569;
-  --accent:#2563eb;
+  --bg:#f8fafc;           /* base background (light) */
+  --surface:#ffffff;      /* elevated backgrounds */
+  --card:#ffffff;         /* card glass */
+  --text:#0f172a;         /* primary text */
+  --muted:#475569;        /* secondary text */
+  --accent:#3b82f6;       /* primary accent */
+  --accent-2:#34d399;     /* secondary accent */
+  --ring: color-mix(in srgb, var(--accent) 40%, transparent);
+  --border: color-mix(in srgb, var(--text) 12%, transparent);
+  --chip-bg: color-mix(in srgb, var(--surface) 70%, transparent);
+  --shadow: 0 30px 80px rgba(2,6,23,0.10);
   --button-bg:#0f172a;
   --button-text:#ffffff;
 }
 
 .dark{
-  --bg:#0f172a;
-  --card:#1e293b;
-  --text:#f1f5f9;
-  --sub:#94a3b8;
-  --accent:#3b82f6;
-  --button-bg:#f1f5f9;
-  --button-text:#0f172a;
+  --bg:#0b1220;           /* base background (dark) */
+  --surface:#0f172a;      /* elevated backgrounds */
+  --card:#0f1626;         /* card glass */
+  --text:#e5f0ff;         /* primary text */
+  --muted:#97a6c5;        /* secondary text */
+  --accent:#60a5fa;       /* primary accent */
+  --accent-2:#34d399;     /* secondary accent */
+  --ring: color-mix(in srgb, var(--accent) 40%, transparent);
+  --border: color-mix(in srgb, var(--text) 10%, transparent);
+  --chip-bg: color-mix(in srgb, var(--surface) 70%, transparent);
+  --shadow: 0 30px 80px rgba(2,6,23,0.35);
+  --button-bg:#111827;
+  --button-text:#e5f0ff;
 }
 
-*{margin:0;padding:0;box-sizing:border-box;}
-
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
 body{
   font-family:'Inter',sans-serif;
-  background:var(--bg);
+  background:
+    radial-gradient(1000px 700px at 15% 10%, rgba(96,165,250,0.10), transparent 60%),
+    radial-gradient(1200px 800px at 85% 15%, rgba(52,211,153,0.10), transparent 55%),
+    var(--bg);
   color:var(--text);
-  transition:0.3s ease;
+  transition:background-color .3s ease, color .3s ease;
+  line-height:1.6;
+  min-height:100svh;
 }
 
-.container{
-  max-width:1100px;
-  margin:auto;
-  padding:60px 20px;
+.container{max-width:1200px;margin:auto;padding:56px 24px}
+
+/* Ambient background */
+#bg-canvas{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1;opacity:.55}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--bg) 82%, transparent);backdrop-filter:saturate(1.2) blur(10px);border-bottom:1px solid var(--border)}
+.nav{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 24px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.2px}
+.brand-badge{width:36px;height:36px;border-radius:12px;display:grid;place-items:center;color:#fff;background:conic-gradient(from 180deg at 50% 50%, #2563eb, #06b6d4, #34d399, #2563eb);box-shadow:0 8px 24px rgba(37,99,235,.35)}
+.brand span{opacity:.92}
+.nav-actions{display:flex;gap:8px;align-items:center}
+.icon-btn{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;background:color-mix(in srgb, var(--surface) 60%, transparent);border:1px solid var(--border);color:var(--text);text-decoration:none;transition:.2s}
+.icon-btn:hover{transform:translateY(-2px);border-color:var(--ring);box-shadow:0 10px 24px rgba(2,6,23,.22)}
+
+/* Theme toggle */
+.theme-toggle{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;background:color-mix(in srgb, var(--surface) 60%, transparent);box-shadow:0 6px 20px rgba(0,0,0,.22);transition:.25s;border:1px solid var(--border);color:var(--text);outline:none}
+.theme-toggle:focus-visible{box-shadow:0 0 0 3px var(--ring)}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:36px;align-items:center;padding:46px 36px;background:linear-gradient(180deg, color-mix(in srgb, var(--card) 88%, transparent), color-mix(in srgb, var(--card) 78%, transparent));border:1px solid var(--border);border-radius:24px;box-shadow:var(--shadow);backdrop-filter:blur(8px) saturate(1.1);margin:32px 0 56px}
+.hero-left h1{font-size:clamp(38px,6vw,64px);line-height:1.05;margin-bottom:10px;background:linear-gradient(90deg,#93c5fd 0%,#60a5fa 45%,#34d399 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-left p.lead{color:var(--muted);margin-bottom:18px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.btn{--bg:var(--button-bg);--fg:var(--button-text);display:inline-flex;align-items:center;gap:10px;text-decoration:none;padding:12px 18px;border-radius:14px;border:1px solid var(--border);background:var(--bg);color:var(--fg);transition:.25s;font-weight:600;box-shadow:0 10px 28px rgba(2,6,23,.25)}
+.btn:hover{transform:translateY(-3px);background:linear-gradient(90deg, color-mix(in srgb, var(--accent) 70%, #1f2937), color-mix(in srgb, var(--accent-2) 65%, #111827))}
+.btn.secondary{--bg:transparent;--fg:var(--text);backdrop-filter:blur(6px);box-shadow:none}
+.btn .icon{width:20px;height:20px}
+.hero-aside{display:grid;place-items:center}
+.avatar{width:120px;height:120px;border-radius:28px;display:grid;place-items:center;position:relative;overflow:hidden;background:radial-gradient(120px 120px at 30% 20%, rgba(96,165,250,.35), transparent 60%), radial-gradient(160px 160px at 70% 80%, rgba(52,211,153,.28), transparent 55%), color-mix(in srgb, var(--surface) 70%, transparent);border:1px solid var(--border);box-shadow:0 20px 60px rgba(2,6,23,.35);font-weight:800;letter-spacing:.5px}
+.avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:inherit;display:none}
+.avatar.has-image img{display:block}
+.avatar .initials{z-index:1}
+
+/* Sections */
+.section-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:28px}
+.card{grid-column:span 6;background:linear-gradient(180deg, color-mix(in srgb, var(--card) 88%, transparent), color-mix(in srgb, var(--card) 74%, transparent));padding:24px 22px;border-radius:18px;border:1px solid var(--border);box-shadow:0 18px 46px rgba(2,6,23,.28);backdrop-filter:blur(6px) saturate(1.05);transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease}
+.card:hover{transform:translateY(-6px);box-shadow:0 28px 70px rgba(2,6,23,.40);border-color:var(--ring)}
+.card .headline{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.card .headline .icon{width:22px;height:22px}
+.card p{color:var(--muted)}
+.card.full{grid-column:span 12}
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:var(--chip-bg);border:1px solid var(--border);color:var(--text);font-size:14px}
+.chip .icon{width:16px;height:16px}
+
+footer{text-align:center;margin:60px 0 10px;font-size:14px;color:var(--muted)}
+
+svg{width:20px;height:20px;stroke:currentColor;fill:none}
+
+/* Responsive */
+@media (max-width: 900px){
+  .hero{grid-template-columns:1fr;gap:24px;text-align:center}
+  .hero-aside{order:-1}
+  .section-grid .card{grid-column:span 12}
 }
 
-.theme-toggle{
-  position:fixed;
-  top:20px;
-  right:20px;
-  width:42px;
-  height:42px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  cursor:pointer;
-  background:var(--card);
-  box-shadow:0 4px 15px rgba(0,0,0,0.1);
-  transition:0.3s;
-}
-
-.hero{
-  text-align:center;
-  padding:70px 30px;
-  background:var(--card);
-  border-radius:20px;
-  box-shadow:0 20px 40px rgba(0,0,0,0.05);
-  margin-bottom:60px;
-}
-
-.hero h1{
-  font-size:48px;
-  font-weight:700;
-  margin-bottom:12px;
-}
-
-.hero p{
-  color:var(--sub);
-  margin-bottom:18px;
-}
-
-.buttons a{
-  text-decoration:none;
-  padding:12px 22px;
-  margin:6px;
-  border-radius:30px;
-  background:var(--button-bg);
-  color:var(--button-text);
-  font-weight:500;
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  transition:0.3s ease;
-}
-
-.buttons a:hover{
-  background:var(--accent);
-  color:#fff;
-  transform:translateY(-3px);
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-  gap:30px;
-}
-
-.card{
-  background:var(--card);
-  padding:30px;
-  border-radius:18px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.05);
-}
-
-.card h2{
-  margin-bottom:15px;
-}
-
-.skills span{
-  display:inline-block;
-  background:var(--bg);
-  padding:6px 12px;
-  border-radius:20px;
-  margin:5px;
-  font-size:14px;
-}
-
-.card a{
-  color:var(--accent);
-  text-decoration:none;
-}
-
-.card a:hover{
-  text-decoration:underline;
-}
-
-footer{
-  text-align:center;
-  margin-top:60px;
-  font-size:14px;
-  color:var(--sub);
-}
-
-svg{
-  width:20px;
-  height:20px;
-  stroke:currentColor;
-  fill:none;
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce){
+  *{transition:none !important}
+  #bg-canvas{display:none}
 }
 </style>
 </head>
 
 <body>
 
-<div class="theme-toggle" onclick="toggleTheme()">
-  <svg id="themeIcon" viewBox="0 0 24 24">
-    <path d="M21 12.79A9 9 0 1111.21 3 
-             7 7 0 0021 12.79z"/>
-  </svg>
-</div>
+<!-- SVG Icons Sprite -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0019 3.77 5.07 5.07 0 0018.91 1S17.73.65 15 2.48a13.38 13.38 0 00-6 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 3.77 5.44 5.44 0 003.5 7.5c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></symbol>
+  <symbol id="i-youtube" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-2C18.88 3.87 12 3.87 12 3.87s-6.88 0-8.59.55a2.78 2.78 0 00-1.95 2A29.94 29.94 0 001 12a29.94 29.94 0 00.46 5.58 2.78 2.78 0 001.95 2c1.71.55 8.59.55 8.59.55s6.88 0 8.59-.55a2.78 2.78 0 001.95-2A29.94 29.94 0 0023 12a29.94 29.94 0 00-.46-5.58z"/><path d="M9.75 15.02L15.5 12 9.75 8.98v6.04z"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12" rx="1"/><circle cx="4" cy="4" r="2"/></symbol>
+  <symbol id="i-external" viewBox="0 0 24 24"><path d="M18 3h3v3M21 3l-9 9"/><path d="M15 3h6v6"/><path d="M5 11v10h10"/></symbol>
+  <symbol id="i-graduation" viewBox="0 0 24 24"><path d="M22 10l-10-5-10 5 10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></symbol>
+  <symbol id="i-certificate" viewBox="0 0 24 24"><path d="M12 3l2.4 4.86L20 9l-4 3.9L17 19l-5-2.6L7 19l1-6.1L4 9l5.6-1.14L12 3z"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="M16 18l6-6-6-6"/><path d="M8 6l-6 6 6 6"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M17.5 19a4.5 4.5 0 000-9 7 7 0 10-13.5 2"/><path d="M2 19h15.5"/></symbol>
+  <symbol id="i-docker" viewBox="0 0 24 24"><rect x="3" y="11" width="3" height="3" rx=".3"/><rect x="7" y="11" width="3" height="3" rx=".3"/><rect x="11" y="11" width="3" height="3" rx=".3"/><rect x="7" y="7" width="3" height="3" rx=".3"/><rect x="11" y="7" width="3" height="3" rx=".3"/><path d="M21 13c-1.2-1.6-3.3-.9-3.3-.9S16.6 9.7 14 11c-1.8 1-1.5 3-1.5 3H7c-1.8 0-3 1.2-3 2.7C4.2 18.8 6.8 20 9.6 20H15c4.4 0 7-2.6 7-5.2 0-.7-.3-1.4-1-1.8z"/></symbol>
+  <symbol id="i-azure" viewBox="0 0 24 24"><path d="M3 18l7-14 3 6-6 8H3z"/><path d="M13 10l8 8h-12l4-8z"/></symbol>
+  <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></symbol>
+  <symbol id="i-redis" viewBox="0 0 24 24"><path d="M3 9l9-4 9 4-9 4-9-4z"/><path d="M3 13l9 4 9-4"/><path d="M3 17l9 4 9-4"/></symbol>
+</svg>
 
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+<header class="site-header" role="banner">
+  <div class="nav">
+    <div class="brand" aria-label="Site brand">
+      <div class="brand-badge" aria-hidden="true">DM</div>
+      <span>Denny Mathew</span>
+    </div>
+    <div class="nav-actions">
+      <a class="icon-btn" href="https://github.com/dennym55" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+        <svg class="icon"><use href="#i-github"/></svg>
+      </a>
+      <a class="icon-btn" href="https://www.linkedin.com/in/dennym-space/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
+        <svg class="icon"><use href="#i-linkedin"/></svg>
+      </a>
+      <a class="icon-btn" href="https://www.youtube.com/@denny-mathew" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube">
+        <svg class="icon"><use href="#i-youtube"/></svg>
+      </a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle theme" onclick="toggleTheme()">
+        <svg id="themeIcon" viewBox="0 0 24 24">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<a class="skip-link" href="#main" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
+
+<main id="main">
 <div class="container">
 
-<section class="hero">
-  <h1>Denny Mathew</h1>
-  <p>Senior Software Engineer • Java • Spring Boot • Azure • Distributed Systems • DevOps</p>
-  <p>Designing scalable backend architectures & cloud-native systems.</p>
-
-  <div class="buttons">
-    <a href="https://www.youtube.com/@denny-mathew" target="_blank">YouTube</a>
-    <a href="https://github.com/dennym55" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/dennym-space/" target="_blank">LinkedIn</a>
-    <a href="https://www.scaler.com/academy/profile/e78bd859848b/" target="_blank">Scaler</a>
+<section class="hero" aria-label="Intro">
+  <div class="hero-left">
+    <div class="eyebrow" style="display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border:1px solid var(--border);border-radius:999px;background:var(--chip-bg);color:var(--muted);font-size:13px;margin-bottom:10px">
+      <svg class="icon" style="width:16px;height:16px"><use href="#i-code"/></svg>
+      Senior Software Engineer
+    </div>
+    <h1>Denny Mathew</h1>
+    <p class="lead">Designing scalable backend architectures and cloud‑native systems.</p>
+    <p class="lead">Java • Spring Boot • Azure • Microservices • Distributed Systems • DevOps</p>
+    <div class="hero-actions">
+      <a class="btn" href="https://github.com/dennym55" target="_blank" rel="noopener">
+        <svg class="icon"><use href="#i-github"/></svg>
+        GitHub
+        <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>
+      </a>
+      <a class="btn secondary" href="https://www.linkedin.com/in/dennym-space/" target="_blank" rel="noopener">
+        <svg class="icon"><use href="#i-linkedin"/></svg>
+        LinkedIn
+        <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>
+      </a>
+      <a class="btn secondary" href="https://www.youtube.com/@denny-mathew" target="_blank" rel="noopener">
+        <svg class="icon"><use href="#i-youtube"/></svg>
+        YouTube
+        <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>
+      </a>
+      <a class="btn secondary" href="https://www.scaler.com/academy/profile/e78bd859848b/" target="_blank" rel="noopener">
+        <svg class="icon"><use href="#i-graduation"/></svg>
+        Scaler Profile
+        <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="hero-aside" aria-hidden="true">
+    <!-- Replace profile.jpg with your own file placed next to index.html or use a full image URL -->
+    <div class="avatar">
+      <img src="profile.jpg" alt="Portrait of Denny Mathew" decoding="async" referrerpolicy="no-referrer" onload="this.parentElement.classList.add('has-image')" onerror="this.remove()">
+      <span class="initials">DM</span>
+    </div>
   </div>
 </section>
 
-<div class="grid">
+<div class="section-grid">
 
-<div class="card">
-<h2>About</h2>
-<p>
-Independent Software Engineer & Content Creator specializing in backend engineering,
-microservices, cloud-native systems, and distributed architecture.
-Currently pursuing M.Sc. in Computer Science (Scaler – Woolf University).
-</p>
-</div>
+  <section class="card full" aria-label="About">
+    <div class="headline"><svg class="icon"><use href="#i-code"/></svg><h2>About</h2></div>
+    <p>
+      Independent Software Engineer & Content Creator specializing in backend engineering, microservices, cloud‑native systems, and distributed architecture.
+      Currently pursuing M.Sc. in Computer Science (Scaler – Woolf University).
+    </p>
+  </section>
 
-<div class="card">
-<h2>Core Skills</h2>
-<div class="skills">
-<span>Java</span>
-<span>Spring Boot</span>
-<span>Microservices</span>
-<span>Azure</span>
-<span>Docker</span>
-<span>CI/CD</span>
-<span>Redis</span>
-<span>SQL</span>
-<span>System Design</span>
-<span>Distributed Systems</span>
-</div>
-</div>
+  <section class="card" aria-label="Core Skills">
+    <div class="headline"><svg class="icon"><use href="#i-code"/></svg><h2>Core Skills</h2></div>
+    <div class="skills">
+      <span class="chip"><svg class="icon"><use href="#i-code"/></svg>Java</span>
+      <span class="chip"><svg class="icon"><use href="#i-code"/></svg>Spring Boot</span>
+      <span class="chip"><svg class="icon"><use href="#i-code"/></svg>Microservices</span>
+      <span class="chip"><svg class="icon"><use href="#i-azure"/></svg>Azure</span>
+      <span class="chip"><svg class="icon"><use href="#i-docker"/></svg>Docker</span>
+      <span class="chip"><svg class="icon"><use href="#i-cloud"/></svg>CI/CD</span>
+      <span class="chip"><svg class="icon"><use href="#i-redis"/></svg>Redis</span>
+      <span class="chip"><svg class="icon"><use href="#i-db"/></svg>SQL</span>
+      <span class="chip"><svg class="icon"><use href="#i-code"/></svg>System Design</span>
+      <span class="chip"><svg class="icon"><use href="#i-cloud"/></svg>Distributed Systems</span>
+    </div>
+  </section>
 
-<div class="card">
-<h2>Education</h2>
-<p><strong>M.Sc. Computer Science</strong><br>
-Scaler (Woolf University) – 2023–2025</p>
-<br>
-<p><strong>B.Tech Computer Science</strong><br>
-CUSAT – 2007–2012</p>
-</div>
+  <section class="card" aria-label="Education">
+    <div class="headline"><svg class="icon"><use href="#i-graduation"/></svg><h2>Education</h2></div>
+    <p><strong>M.Sc. Computer Science</strong><br>Scaler (Woolf University) – 2023–2025</p>
+    <br>
+    <p><strong>B.Tech Computer Science</strong><br>CUSAT – 2007–2012</p>
+  </section>
 
-<div class="card">
-<h2>Certifications</h2>
-<p><a href="https://credsverse.com/credentials/6e9f85ea-493f-46c1-9852-08c9bf0134ec" target="_blank">
-AI Engineering Specialization – ByteByteGo</a></p>
-
-<p><a href="https://learn.microsoft.com/en-us/users/dennymathew-6625/credentials/e9b5fb0770641186" target="_blank">
-Microsoft Certified: Azure AI Fundamentals</a></p>
-
-<p><a href="https://learn.microsoft.com/en-us/users/dennymathew-6625/credentials/f63d8f0a7fc8a568" target="_blank">
-Microsoft Certified: Azure Fundamentals</a></p>
-
-<p><a href="https://d1bm918zlnq37v.cloudfront.net/CECTemp/Certificates/CA-11-2025-26/91.jpg" target="_blank">
-Advanced AI Engineering – IIT Roorkee (with Scaler)</a></p>
-</div>
+  <section class="card full" aria-label="Certifications">
+    <div class="headline"><svg class="icon"><use href="#i-certificate"/></svg><h2>Certifications</h2></div>
+    <p><a href="https://credsverse.com/credentials/6e9f85ea-493f-46c1-9852-08c9bf0134ec" target="_blank" rel="noopener">AI Engineering Specialization – ByteByteGo</a></p>
+    <p><a href="https://learn.microsoft.com/en-us/users/dennymathew-6625/credentials/e9b5fb0770641186" target="_blank" rel="noopener">Microsoft Certified: Azure AI Fundamentals</a></p>
+    <p><a href="https://learn.microsoft.com/en-us/users/dennymathew-6625/credentials/f63d8f0a7fc8a568" target="_blank" rel="noopener">Microsoft Certified: Azure Fundamentals</a></p>
+    <p><a href="https://d1bm918zlnq37v.cloudfront.net/CECTemp/Certificates/CA-11-2025-26/91.jpg" target="_blank" rel="noopener">Advanced AI Engineering – IIT Roorkee (with Scaler)</a></p>
+  </section>
 
 </div>
 
 <footer>
-© 2026 Denny Mathew • dennymathew.me
+  © 2026 Denny Mathew • dennymathew.me
+  <div style="margin-top:10px;display:flex;gap:10px;justify-content:center">
+    <a class="icon-btn" href="https://github.com/dennym55" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><svg class="icon"><use href="#i-github"/></svg></a>
+    <a class="icon-btn" href="https://www.linkedin.com/in/dennym-space/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><svg class="icon"><use href="#i-linkedin"/></svg></a>
+    <a class="icon-btn" href="https://www.youtube.com/@denny-mathew" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube"><svg class="icon"><use href="#i-youtube"/></svg></a>
+  </div>
 </footer>
 
 </div>
+</main>
 
 <script>
-function toggleTheme(){
-  document.body.classList.toggle("dark");
+function setTheme(mode){
+  const isDark = mode === 'dark';
+  document.body.classList.toggle('dark', isDark);
+  try{ localStorage.setItem('theme', isDark ? 'dark' : 'light'); }catch(e){}
+  const btn = document.getElementById('themeToggle');
+  if(btn){ btn.setAttribute('aria-pressed', String(isDark)); }
   updateIcon();
+}
+
+function toggleTheme(){
+  const isDark = document.body.classList.contains('dark');
+  setTheme(isDark ? 'light' : 'dark');
 }
 
 function updateIcon(){
@@ -254,11 +317,76 @@ function updateIcon(){
   }
 }
 
-if(window.matchMedia("(prefers-color-scheme: dark)").matches){
-  document.body.classList.add("dark");
-}
+// Initialize theme: from storage, else system
+(function initTheme(){
+  let stored = null;
+  try{ stored = localStorage.getItem('theme'); }catch(e){}
+  if(stored === 'dark' || stored === 'light'){
+    setTheme(stored);
+  } else {
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    setTheme(prefersDark ? 'dark' : 'light');
+  }
+})();
 
-updateIcon();
+// Lightweight animated background (particles)
+(function initAmbient(){
+  const canvas = document.getElementById('bg-canvas');
+  if(!canvas) return;
+  const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(prefersReduced) return;
+  const ctx = canvas.getContext('2d');
+  let dpr = Math.min(window.devicePixelRatio||1, 2);
+  let w=0,h=0; let raf=0; let particles=[];
+  const COLORS_LIGHT=['#93c5fd','#a7f3d0','#bfdbfe','#99f6e4'];
+  const COLORS_DARK=['#1e40af','#0e7490','#0ea5e9','#10b981'];
+  function resize(){
+    w = canvas.width = Math.floor(window.innerWidth * dpr);
+    h = canvas.height = Math.floor(window.innerHeight * dpr);
+  }
+  function resetParticles(){
+    const count = Math.round((window.innerWidth*window.innerHeight)/90000);
+    particles = Array.from({length:Math.max(18, Math.min(48, count))}, ()=>({
+      x: Math.random()*w,
+      y: Math.random()*h,
+      r: (8+Math.random()*24)*dpr,
+      vx: (-0.3+Math.random()*0.6)*dpr,
+      vy: (-0.3+Math.random()*0.6)*dpr,
+      a: 0.08+Math.random()*0.12
+    }));
+  }
+  function step(){
+    const dark = document.body.classList.contains('dark');
+    const palette = dark ? COLORS_DARK : COLORS_LIGHT;
+    ctx.clearRect(0,0,w,h);
+    for(const p of particles){
+      p.x += p.vx; p.y += p.vy;
+      if(p.x<-50||p.x>w+50) p.vx*=-1;
+      if(p.y<-50||p.y>h+50) p.vy*=-1;
+      const g = ctx.createRadialGradient(p.x,p.y,0,p.x,p.y,p.r);
+      const col = palette[(p.r|0)%palette.length];
+      g.addColorStop(0, col + 'cc');
+      g.addColorStop(1, (dark?'#000000':'#ffffff') + '00');
+      ctx.globalAlpha = p.a;
+      ctx.fillStyle = g;
+      ctx.beginPath();
+      ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+      ctx.fill();
+    }
+    raf = requestAnimationFrame(step);
+  }
+  function start(){
+    cancelAnimationFrame(raf);
+    dpr = Math.min(window.devicePixelRatio||1, 2);
+    resize();
+    resetParticles();
+    step();
+  }
+  window.addEventListener('resize', start);
+  const mo = new MutationObserver(start);
+  mo.observe(document.body,{attributes:true, attributeFilter:['class']});
+  start();
+})();
 </script>
 
 </body>
