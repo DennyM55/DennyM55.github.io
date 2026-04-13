@@ -70,8 +70,6 @@
       --primary-soft: #dff4f1;
       --accent: #2563eb;
       --accent-soft: #e7efff;
-      --gold: #a16207;
-      --gold-soft: #fff3dc;
       --shadow-1: 0 10px 30px rgba(15, 23, 42, 0.06);
       --shadow-2: 0 16px 40px rgba(15, 23, 42, 0.09);
       --radius-lg: 24px;
@@ -101,28 +99,31 @@
       --primary-soft: #123834;
       --accent: #7aa7ff;
       --accent-soft: #1a2d56;
-      --gold: #f0c36a;
-      --gold-soft: #3e3214;
       --shadow-1: 0 10px 30px rgba(0, 0, 0, 0.28);
       --shadow-2: 0 16px 40px rgba(0, 0, 0, 0.35);
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     html, body {
       margin: 0;
       min-height: 100%;
       font-family: "Inter", sans-serif;
-      background: radial-gradient(circle at top left, rgba(37, 99, 235, 0.06), transparent 24%),
-                  radial-gradient(circle at top right, rgba(15, 118, 110, 0.08), transparent 22%),
-                  var(--bg);
+      background:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.06), transparent 24%),
+        radial-gradient(circle at top right, rgba(15, 118, 110, 0.08), transparent 22%),
+        var(--bg);
       color: var(--text);
       line-height: 1.65;
       font-size: 16px;
       scroll-behavior: smooth;
     }
 
-    a { color: inherit; }
+    a {
+      color: inherit;
+    }
 
     .material-symbols-outlined {
       font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 24;
@@ -298,15 +299,11 @@
       font-size: 0.97rem;
     }
 
-    .action-row,
-    .mini-links {
+    .action-row {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
       align-items: center;
-    }
-
-    .action-row {
       margin-top: 24px;
     }
 
@@ -316,9 +313,12 @@
     .md-link {
       position: relative;
       overflow: hidden;
-      transition: transform var(--transition), box-shadow var(--transition),
-                  background-color var(--transition), border-color var(--transition),
-                  color var(--transition);
+      transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        background-color var(--transition),
+        border-color var(--transition),
+        color var(--transition);
     }
 
     .md-btn {
@@ -333,12 +333,6 @@
       font-weight: 600;
       font-size: 0.96rem;
       cursor: pointer;
-    }
-
-    .md-btn.primary {
-      background: linear-gradient(135deg, var(--primary), var(--accent));
-      color: #fff;
-      box-shadow: 0 10px 24px rgba(37, 99, 235, 0.18);
     }
 
     .md-btn.secondary {
@@ -360,7 +354,9 @@
       transform: translateY(-1px);
     }
 
-    .md-btn:hover { box-shadow: var(--shadow-1); }
+    .md-btn:hover {
+      box-shadow: var(--shadow-1);
+    }
 
     .md-icon-btn {
       width: 42px;
@@ -393,7 +389,11 @@
       width: 132px;
       height: 132px;
       border-radius: 28px;
-      background: linear-gradient(135deg, color-mix(in srgb, var(--primary) 18%, var(--surface)), color-mix(in srgb, var(--accent) 18%, var(--surface)));
+      background: linear-gradient(
+        135deg,
+        color-mix(in srgb, var(--primary) 18%, var(--surface)),
+        color-mix(in srgb, var(--accent) 18%, var(--surface))
+      );
       border: 1px solid var(--line-soft);
       display: grid;
       place-items: center;
@@ -415,8 +415,13 @@
       display: none;
     }
 
-    .profile-avatar.has-image img { display: block; }
-    .profile-avatar.has-image .initials { display: none; }
+    .profile-avatar.has-image img {
+      display: block;
+    }
+
+    .profile-avatar.has-image .initials {
+      display: none;
+    }
 
     .profile-panel h2 {
       margin: 4px 0 6px;
@@ -520,25 +525,6 @@
     .certs-card { grid-column: span 6; }
     .links-card { grid-column: span 6; }
 
-    .skills-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .md-chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      min-height: 38px;
-      padding: 0 14px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      background: var(--surface-2);
-      font-size: 0.92rem;
-      color: var(--text);
-    }
-
     .feature-list {
       display: grid;
       gap: 14px;
@@ -567,7 +553,10 @@
       border-top: 1px solid var(--line-soft);
     }
 
-    .expertise-group:first-of-type { border-top: 0; padding-top: 0; }
+    .expertise-group:first-of-type {
+      border-top: 0;
+      padding-top: 0;
+    }
 
     .expertise-group h3 {
       margin: 0 0 8px;
@@ -773,13 +762,6 @@
         </p>
 
         <div class="action-row" aria-label="Primary profile links">
-          <!-- Replace /Denny_Mathew_Resume.pdf with your actual hosted resume path -->
-          <a class="md-btn primary" href="/Denny_Mathew_Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="View resume">
-            <span class="material-symbols-outlined" aria-hidden="true">description</span>
-            View Resume
-            <span class="state-layer"></span>
-          </a>
-
           <a class="md-btn secondary" href="https://www.linkedin.com/in/dennym-space/" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile">
             <span class="material-symbols-outlined" aria-hidden="true">work</span>
             LinkedIn
@@ -813,10 +795,9 @@
           >
             <img
               id="profileImage"
-              src="https://media.licdn.com/dms/image/v2/D5603AQEo4OGfbhVN3A/profile-displayphoto-crop_800_800/B56ZxN9g..J4AI-/0/1770834499056?e=1773878400&v=beta&t=2C6ww3bmpKxBm1QARHUIrnkryVQODutUgSPU4T2Q0fA"
+              src="/profile_pic.jpeg"
               alt="Portrait of Denny Mathew"
               decoding="async"
-              referrerpolicy="no-referrer"
             />
             <span class="initials" aria-hidden="true">DM</span>
           </a>
