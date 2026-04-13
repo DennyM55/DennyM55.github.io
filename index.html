@@ -1,762 +1,1123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Denny Mathew | Senior Software Engineer</title>
-<meta name="description" content="Portfolio of Denny Mathew, Senior Software Engineer specializing in Java, Spring Boot, Azure, Microservices, and Distributed Systems.">
-<link rel="canonical" href="https://dennymathew.me/">
-<meta property="og:title" content="Denny Mathew | Senior Software Engineer">
-<meta property="og:description" content="Designing scalable backend architectures and cloud-native systems. Java, Spring Boot, Azure, Distributed Systems, DevOps.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://dennymathew.me/">
-<meta property="og:image" content="https://dennymathew.me/og-card.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Denny Mathew | Senior Software Engineer">
-<meta name="twitter:description" content="Designing scalable backend architectures and cloud-native systems.">
-<meta name="twitter:image" content="https://dennymathew.me/og-card.png">
-<meta name="theme-color" content="#F7F6F3" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#1F1A17" media="(prefers-color-scheme: dark)">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0&display=swap" rel="stylesheet">
-<style>
-:root {
-  color-scheme: light;
-  --md-sys-color-primary: #0F766E;
-  --md-sys-color-on-primary: #ffffff;
-  --md-sys-color-primary-container: #d6ebe7;
-  --md-sys-color-on-primary-container: #0b3f3b;
-  --md-sys-color-secondary: #ffa000;
-  --md-sys-color-on-secondary: #332000;
-  --md-sys-color-secondary-container: #f8ebcf;
-  --md-sys-color-on-secondary-container: #3b2a11;
-  --md-sys-color-tertiary: #7d6a4f;
-  --md-sys-color-on-tertiary: #ffffff;
-  --md-sys-color-tertiary-container: #ede1cf;
-  --md-sys-color-on-tertiary-container: #382d1b;
-  --md-sys-color-error: #b3261e;
-  --md-sys-color-background: #F7F6F3;
-  --md-sys-color-on-background: #1F2933;
-  --md-sys-color-surface: #FFFFFF;
-  --md-sys-color-surface-variant: #FBFAF8;
-  --md-sys-color-on-surface: #1F2933;
-  --md-sys-color-on-surface-variant: #4B5563;
-  --md-sys-color-outline: #cabfae;
-  --md-sys-color-outline-variant: #e9e1d7;
-  --md-sys-color-shadow: #000000;
-  --md-sys-color-surface-tint: #0F766E;
-  --md-elevation-1: 0 4px 16px rgba(0, 0, 0, 0.04);
-  --md-elevation-2: 0 8px 24px rgba(0, 0, 0, 0.06);
-  --md-elevation-3: 0 6px 18px rgba(0, 0, 0, 0.05);
-  --md-motion-fast: 200ms ease;
-  --space-1: 8px;
-  --space-2: 16px;
-  --space-3: 24px;
-  --space-4: 24px;
-  --space-5: 24px;
-  --space-6: 24px;
-}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-body.dark {
-  color-scheme: dark;
-  --md-sys-color-primary: #5eb2a9;
-  --md-sys-color-on-primary: #003730;
-  --md-sys-color-primary-container: #1c4c47;
-  --md-sys-color-on-primary-container: #c6e7e2;
-  --md-sys-color-secondary: #d8b77a;
-  --md-sys-color-on-secondary: #3f2a00;
-  --md-sys-color-secondary-container: #58472d;
-  --md-sys-color-on-secondary-container: #f0e2c8;
-  --md-sys-color-tertiary: #b7a184;
-  --md-sys-color-on-tertiary: #34260f;
-  --md-sys-color-tertiary-container: #51422f;
-  --md-sys-color-on-tertiary-container: #ebdcc4;
-  --md-sys-color-error: #ffb4ab;
-  --md-sys-color-background: #1F1A17;
-  --md-sys-color-on-background: #e8dfd4;
-  --md-sys-color-surface: #2c2621;
-  --md-sys-color-surface-variant: #38322d;
-  --md-sys-color-on-surface: #e8dfd4;
-  --md-sys-color-on-surface-variant: #b6ab9f;
-  --md-sys-color-outline: #8a7f72;
-  --md-sys-color-outline-variant: #4a423b;
-  --md-sys-color-shadow: #000000;
-  --md-sys-color-surface-tint: #5eb2a9;
-}
+  <title>Denny Mathew | Senior Java Backend Engineer</title>
+  <meta
+    name="description"
+    content="Denny Mathew is a Senior Java Backend Engineer specializing in Spring Boot, REST APIs, Microservices, Distributed Systems, API Modernization, SQL, CI/CD, Docker, Kubernetes, Azure, and cloud-native backend engineering. Open to Remote and Europe roles."
+  />
+  <link rel="canonical" href="https://dennymathew.me/" />
 
-* {
-  box-sizing: border-box;
-}
+  <meta property="og:title" content="Denny Mathew | Senior Java Backend Engineer" />
+  <meta
+    property="og:description"
+    content="Senior Java Backend Engineer focused on Spring Boot, REST APIs, Microservices, Distributed Systems, API Modernization, SQL, CI/CD, Docker, Kubernetes, and cloud-native backend engineering."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dennymathew.me/" />
+  <meta property="og:image" content="https://dennymathew.me/og-card.png" />
 
-html,
-body {
-  margin: 0;
-  min-height: 100%;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  background: var(--md-sys-color-background);
-  color: var(--md-sys-color-on-background);
-  line-height: 1.6;
-}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Denny Mathew | Senior Java Backend Engineer" />
+  <meta
+    name="twitter:description"
+    content="Senior Java Backend Engineer building scalable APIs, microservices, and cloud-native backend systems."
+  />
+  <meta name="twitter:image" content="https://dennymathew.me/og-card.png" />
 
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 24;
-  vertical-align: middle;
-  font-size: 20px;
-}
+  <meta name="theme-color" content="#F6F7FB" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#121722" media="(prefers-color-scheme: dark)" />
 
-.skip-link {
-  position: absolute;
-  left: -9999px;
-}
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0&display=swap"
+    rel="stylesheet"
+  />
 
-.skip-link:focus {
-  left: var(--space-2);
-  top: var(--space-2);
-  background: var(--md-sys-color-primary);
-  color: var(--md-sys-color-on-primary);
-  padding: var(--space-1) var(--space-2);
-  border-radius: 8px;
-  z-index: 200;
-}
-
-.top-app-bar {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: color-mix(in srgb, var(--md-sys-color-surface) 96%, transparent);
-  border-bottom: 1px solid var(--md-sys-color-outline-variant);
-}
-
-.app-bar-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  height: 68px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 var(--space-3);
-}
-
-.app-title {
-  display: flex;
-  align-items: center;
-  gap: var(--space-1);
-  font-weight: 700;
-  letter-spacing: 0.2px;
-}
-
-.avatar-dot {
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
-  background: var(--md-sys-color-primary);
-  color: var(--md-sys-color-on-primary);
-  display: grid;
-  place-items: center;
-  font-size: 0.72rem;
-}
-
-.app-actions {
-  display: flex;
-  align-items: center;
-  gap: var(--space-1);
-}
-
-main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: var(--space-3);
-}
-
-.hero-card {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  align-items: center;
-  gap: var(--space-2);
-  padding: var(--space-2);
-  background: var(--md-sys-color-surface);
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.045);
-}
-
-.hero-content h1 {
-  margin: 0;
-  font-size: clamp(2.2rem, 4.8vw, 3rem);
-  font-weight: 800;
-  line-height: 1.1;
-  letter-spacing: -0.015em;
-}
-
-.hero-content {
-  display: grid;
-  justify-items: start;
-  align-content: center;
-}
-
-.hero-subtitle {
-  margin: var(--space-2) 0 var(--space-1);
-  font-size: 1.05rem;
-  line-height: 1.6;
-  color: color-mix(in srgb, var(--md-sys-color-on-surface-variant) 84%, var(--md-sys-color-surface));
-}
-
-.hero-tags {
-  margin: 0 0 10px;
-  font-size: 0.98rem;
-  line-height: 1.6;
-  color: color-mix(in srgb, var(--md-sys-color-on-surface-variant) 88%, var(--md-sys-color-surface));
-}
-
-.action-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-1);
-  align-items: center;
-}
-
-.md-btn,
-.md-icon-btn,
-.md-chip,
-.md-link {
-  position: relative;
-  overflow: hidden;
-}
-
-.md-btn {
-  border-radius: 8px;
-  min-height: 36px;
-  padding: 0 12px;
-  font: 500 0.95rem/1 "Inter", sans-serif;
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-1);
-  text-decoration: none;
-  cursor: pointer;
-  transition: box-shadow var(--md-motion-fast), border-color var(--md-motion-fast), color var(--md-motion-fast), background-color var(--md-motion-fast);
-}
-
-.md-btn.primary {
-  background: var(--md-sys-color-primary);
-  color: var(--md-sys-color-on-primary);
-  border: 1px solid var(--md-sys-color-primary);
-  box-shadow: 0 4px 12px rgba(1, 149, 135, 0.18);
-}
-
-.md-btn.tonal {
-  background: transparent;
-  color: var(--md-sys-color-primary);
-  border: 1px solid var(--md-sys-color-primary);
-}
-
-.md-btn.primary:hover,
-.md-btn.tonal:hover {
-  border-color: var(--md-sys-color-secondary);
-  box-shadow: 0 1px 6px rgba(15, 118, 110, 0.08);
-  background: color-mix(in srgb, var(--md-sys-color-primary) 6%, var(--md-sys-color-surface));
-}
-
-.md-icon-btn {
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
-  border: 1px solid var(--md-sys-color-outline-variant);
-  background: transparent;
-  color: var(--md-sys-color-on-surface);
-  display: inline-grid;
-  place-items: center;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background-color var(--md-motion-fast), border-color var(--md-motion-fast), color var(--md-motion-fast);
-}
-
-.md-icon-btn:hover {
-  border-color: var(--md-sys-color-secondary);
-  color: var(--md-sys-color-primary);
-  background: color-mix(in srgb, var(--md-sys-color-secondary) 10%, transparent);
-}
-
-.hero-media {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 0;
-  background: transparent;
-  border: 0;
-  padding: 0;
-  border-radius: 0;
-  position: relative;
-}
-
-.hero-media::before {
-  content: "";
-  position: absolute;
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  background: radial-gradient(circle, color-mix(in srgb, #ffffff 70%, var(--md-sys-color-primary) 30%) 0%, transparent 72%);
-  opacity: 0.25;
-  z-index: 0;
-  pointer-events: none;
-}
-
-.profile-avatar {
-  width: 116px;
-  height: 116px;
-  border-radius: 50%;
-  background: color-mix(in srgb, var(--md-sys-color-primary) 16%, var(--md-sys-color-surface));
-  border: 4px solid #ffffff;
-  display: grid;
-  place-items: center;
-  color: var(--md-sys-color-primary);
-  font-weight: 700;
-  font-size: 2rem;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  z-index: 1;
-}
-
-.profile-avatar img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: none;
-}
-
-.profile-avatar.has-image img {
-  display: block;
-}
-
-.profile-avatar.has-image .initials {
-  display: none;
-}
-
-.sections {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: var(--space-2);
-  margin-top: var(--space-2);
-}
-
-.md-card {
-  grid-column: span 12;
-  background: var(--md-sys-color-surface);
-  border: 0;
-  border-radius: 8px;
-  box-shadow: var(--md-elevation-1);
-  padding: var(--space-2);
-}
-
-.md-card h2 {
-  margin: 0 0 12px;
-  font-size: clamp(1.625rem, 3vw, 1.75rem);
-  line-height: 1.2;
-  letter-spacing: 0.3px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.md-card p {
-  margin: 0 0 12px;
-  font-size: 1rem;
-  line-height: 1.6;
-  color: color-mix(in srgb, var(--md-sys-color-on-surface-variant) 92%, var(--md-sys-color-surface));
-}
-
-.about-card {
-  grid-column: span 12;
-  max-width: none;
-  margin: 0;
-  padding-left: var(--space-2);
-  box-shadow: var(--md-elevation-2);
-}
-
-.about-copy {
-  max-width: 100%;
-}
-
-.skills-card,
-.education-card {
-  grid-column: span 12;
-}
-
-.certs-card {
-  grid-column: span 12;
-}
-
-.skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-
-.md-chip {
-  border: 1px solid color-mix(in srgb, var(--md-sys-color-outline-variant) 75%, var(--md-sys-color-surface));
-  border-radius: 8px;
-  min-height: 28px;
-  padding: 0 7px;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.88rem;
-  background: transparent;
-  transition: border-color var(--md-motion-fast);
-}
-
-.md-chip:hover {
-  border-color: color-mix(in srgb, var(--md-sys-color-secondary) 40%, var(--md-sys-color-outline-variant));
-}
-
-.md-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  color: var(--md-sys-color-primary);
-  text-decoration: none;
-  border-radius: 8px;
-  padding: 4px 6px;
-  transition: color var(--md-motion-fast);
-}
-
-.md-link:hover {
-  color: var(--md-sys-color-secondary);
-}
-
-.md-link:focus-visible,
-.md-btn:focus-visible,
-.md-icon-btn:focus-visible {
-  outline: 2px solid var(--md-sys-color-primary);
-  outline-offset: 2px;
-}
-
-footer {
-  margin-top: var(--space-1);
-  padding: var(--space-1) 0 0;
-  border-radius: 0;
-  border-top: 1px solid var(--md-sys-color-outline-variant);
-  background: transparent;
-  box-shadow: none;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-2);
-  font-size: 0.92rem;
-}
-
-.footer-actions {
-  display: flex;
-  gap: var(--space-1);
-}
-
-.state-layer {
-  position: absolute;
-  inset: 0;
-  background: currentColor;
-  opacity: 0;
-  transition: opacity var(--md-motion-fast);
-  pointer-events: none;
-}
-
-.md-btn:hover .state-layer,
-.md-icon-btn:hover .state-layer,
-.md-chip:hover .state-layer,
-.md-link:hover .state-layer {
-  opacity: 0.05;
-}
-
-.certs-card p {
-  margin: 0;
-}
-
-.certs-card p + p {
-  margin-top: 6px;
-}
-
-.certs-card .md-link {
-  width: 100%;
-  justify-content: flex-start;
-}
-
-.cert-list {
-  display: grid;
-  gap: 6px;
-}
-
-.certs-card {
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-.certs-card .material-symbols-outlined {
-  font-size: 18px;
-}
-
-footer .md-icon-btn {
-  width: 32px;
-  height: 32px;
-}
-
-@media (max-width: 960px) {
-  .hero-card {
-    grid-template-columns: 1fr;
-    gap: var(--space-3);
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Denny Mathew",
+    "url": "https://dennymathew.me/",
+    "email": "mailto:dennymathew.dev@gmail.com",
+    "jobTitle": "Senior Java Backend Engineer",
+    "sameAs": [
+      "https://www.linkedin.com/in/dennym-space/",
+      "https://github.com/dennym55",
+      "https://www.scaler.com/academy/profile/e78bd859848b/",
+      "https://www.youtube.com/@denny-mathew"
+    ]
   }
+  </script>
 
-  .hero-media {
-    justify-content: flex-start;
-  }
-}
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7fb;
+      --surface: #ffffff;
+      --surface-2: #f9fbff;
+      --text: #141a24;
+      --muted: #5e6777;
+      --line: #dbe2ee;
+      --line-soft: #e9eef6;
+      --primary: #0f766e;
+      --primary-strong: #0b5f59;
+      --primary-soft: #dff4f1;
+      --accent: #2563eb;
+      --accent-soft: #e7efff;
+      --gold: #a16207;
+      --gold-soft: #fff3dc;
+      --shadow-1: 0 10px 30px rgba(15, 23, 42, 0.06);
+      --shadow-2: 0 16px 40px rgba(15, 23, 42, 0.09);
+      --radius-lg: 24px;
+      --radius-md: 18px;
+      --radius-sm: 12px;
+      --space-1: 8px;
+      --space-2: 16px;
+      --space-3: 24px;
+      --space-4: 32px;
+      --space-5: 48px;
+      --space-6: 64px;
+      --container: 1160px;
+      --transition: 220ms ease;
+    }
 
-@media (min-width: 1024px) {
-  .about-copy {
-    column-count: 2;
-    column-gap: var(--space-3);
-  }
+    body.dark {
+      color-scheme: dark;
+      --bg: #121722;
+      --surface: #191f2b;
+      --surface-2: #202838;
+      --text: #edf2fb;
+      --muted: #a4b0c3;
+      --line: #2c3648;
+      --line-soft: #243044;
+      --primary: #67d2c6;
+      --primary-strong: #84ddd3;
+      --primary-soft: #123834;
+      --accent: #7aa7ff;
+      --accent-soft: #1a2d56;
+      --gold: #f0c36a;
+      --gold-soft: #3e3214;
+      --shadow-1: 0 10px 30px rgba(0, 0, 0, 0.28);
+      --shadow-2: 0 16px 40px rgba(0, 0, 0, 0.35);
+    }
 
-  .skills-card,
-  .education-card {
-    grid-column: span 6;
-  }
+    * { box-sizing: border-box; }
 
-  .education-card p,
-  .certs-card p {
-    margin-bottom: var(--space-1);
-  }
-}
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      font-family: "Inter", sans-serif;
+      background: radial-gradient(circle at top left, rgba(37, 99, 235, 0.06), transparent 24%),
+                  radial-gradient(circle at top right, rgba(15, 118, 110, 0.08), transparent 22%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      font-size: 16px;
+      scroll-behavior: smooth;
+    }
 
-@media (max-width: 680px) {
-  .app-title span:last-child {
-    display: none;
-  }
+    a { color: inherit; }
 
-  .app-bar-inner {
-    padding: 0 var(--space-2);
-  }
+    .material-symbols-outlined {
+      font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 24;
+      font-size: 20px;
+      vertical-align: middle;
+    }
 
-  main {
-    padding: var(--space-3) var(--space-2) var(--space-5);
-  }
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: auto;
+    }
 
-  .hero-card {
-    padding: var(--space-2);
-  }
+    .skip-link:focus {
+      left: 16px;
+      top: 16px;
+      z-index: 999;
+      background: var(--primary);
+      color: white;
+      padding: 10px 14px;
+      border-radius: 10px;
+    }
 
-  .profile-avatar {
-    width: 108px;
-    height: 108px;
-  }
+    .top-app-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(16px);
+      background: color-mix(in srgb, var(--surface) 84%, transparent);
+      border-bottom: 1px solid var(--line-soft);
+    }
 
-  .md-card {
-    padding: 12px;
-  }
-}
-</style>
+    .app-bar-inner {
+      max-width: var(--container);
+      margin: 0 auto;
+      padding: 0 var(--space-3);
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-2);
+    }
+
+    .app-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .avatar-dot {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white;
+      font-weight: 800;
+      box-shadow: var(--shadow-1);
+      flex-shrink: 0;
+    }
+
+    .app-title-meta {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .app-title-meta strong {
+      font-size: 0.98rem;
+      line-height: 1.2;
+    }
+
+    .app-title-meta span {
+      font-size: 0.88rem;
+      color: var(--muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .app-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    main {
+      max-width: var(--container);
+      margin: 0 auto;
+      padding: var(--space-4) var(--space-3) var(--space-6);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: var(--space-4);
+      align-items: stretch;
+      margin-bottom: var(--space-4);
+    }
+
+    .hero-card,
+    .panel,
+    .md-card {
+      background: color-mix(in srgb, var(--surface) 92%, transparent);
+      border: 1px solid var(--line-soft);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-1);
+    }
+
+    .hero-card {
+      padding: 36px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: auto -80px -80px auto;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: radial-gradient(circle, color-mix(in srgb, var(--primary) 20%, transparent), transparent 70%);
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.84rem;
+      font-weight: 700;
+      color: var(--primary-strong);
+      background: var(--primary-soft);
+      border: 1px solid color-mix(in srgb, var(--primary) 18%, transparent);
+      padding: 8px 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(2.3rem, 5vw, 3.8rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+
+    .hero h1 span {
+      display: block;
+      color: var(--primary);
+    }
+
+    .hero-subtitle {
+      margin: 18px 0 12px;
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 760px;
+    }
+
+    .hero-tags {
+      margin: 0 0 10px;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .hero-note {
+      margin: 16px 0 0;
+      color: var(--muted);
+      font-size: 0.97rem;
+    }
+
+    .action-row,
+    .mini-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .action-row {
+      margin-top: 24px;
+    }
+
+    .md-btn,
+    .md-icon-btn,
+    .md-chip,
+    .md-link {
+      position: relative;
+      overflow: hidden;
+      transition: transform var(--transition), box-shadow var(--transition),
+                  background-color var(--transition), border-color var(--transition),
+                  color var(--transition);
+    }
+
+    .md-btn {
+      min-height: 44px;
+      padding: 0 16px;
+      border-radius: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      border: 1px solid transparent;
+      font-weight: 600;
+      font-size: 0.96rem;
+      cursor: pointer;
+    }
+
+    .md-btn.primary {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #fff;
+      box-shadow: 0 10px 24px rgba(37, 99, 235, 0.18);
+    }
+
+    .md-btn.secondary {
+      background: var(--surface);
+      color: var(--text);
+      border-color: var(--line);
+    }
+
+    .md-btn.tonal {
+      background: var(--primary-soft);
+      color: var(--primary-strong);
+      border-color: color-mix(in srgb, var(--primary) 15%, transparent);
+    }
+
+    .md-btn:hover,
+    .md-icon-btn:hover,
+    .md-chip:hover,
+    .md-link:hover {
+      transform: translateY(-1px);
+    }
+
+    .md-btn:hover { box-shadow: var(--shadow-1); }
+
+    .md-icon-btn {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      display: inline-grid;
+      place-items: center;
+      text-decoration: none;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--text);
+      cursor: pointer;
+    }
+
+    .hero-side {
+      display: grid;
+      gap: var(--space-3);
+    }
+
+    .profile-panel {
+      padding: 28px;
+      display: grid;
+      justify-items: center;
+      text-align: center;
+      min-height: 100%;
+      align-content: start;
+    }
+
+    .profile-avatar {
+      width: 132px;
+      height: 132px;
+      border-radius: 28px;
+      background: linear-gradient(135deg, color-mix(in srgb, var(--primary) 18%, var(--surface)), color-mix(in srgb, var(--accent) 18%, var(--surface)));
+      border: 1px solid var(--line-soft);
+      display: grid;
+      place-items: center;
+      color: var(--primary);
+      font-size: 2.4rem;
+      font-weight: 800;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-1);
+      margin-bottom: 16px;
+    }
+
+    .profile-avatar img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: none;
+    }
+
+    .profile-avatar.has-image img { display: block; }
+    .profile-avatar.has-image .initials { display: none; }
+
+    .profile-panel h2 {
+      margin: 4px 0 6px;
+      font-size: 1.3rem;
+      line-height: 1.2;
+    }
+
+    .profile-panel p {
+      margin: 0 0 10px;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .status-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 10px;
+      font-size: 0.84rem;
+      font-weight: 600;
+      border-radius: 999px;
+      border: 1px solid var(--line-soft);
+      background: var(--surface-2);
+      color: var(--text);
+    }
+
+    .stats-panel {
+      padding: 22px;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .stat {
+      border: 1px solid var(--line-soft);
+      background: var(--surface-2);
+      border-radius: 18px;
+      padding: 16px;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.4rem;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+
+    .stat span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .sections {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: var(--space-3);
+    }
+
+    .md-card {
+      grid-column: span 12;
+      padding: 28px;
+    }
+
+    .md-card h2 {
+      margin: 0 0 16px;
+      font-size: clamp(1.35rem, 2vw, 1.65rem);
+      line-height: 1.2;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      letter-spacing: -0.02em;
+    }
+
+    .md-card p {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .md-card p strong {
+      color: var(--text);
+    }
+
+    .what-i-bring-card { grid-column: span 12; }
+    .expertise-card { grid-column: span 7; }
+    .role-fit-card { grid-column: span 5; }
+    .about-card { grid-column: span 8; }
+    .education-card { grid-column: span 4; }
+    .certs-card { grid-column: span 6; }
+    .links-card { grid-column: span 6; }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .md-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 38px;
+      padding: 0 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--surface-2);
+      font-size: 0.92rem;
+      color: var(--text);
+    }
+
+    .feature-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .feature-item {
+      padding: 18px;
+      border-radius: 18px;
+      border: 1px solid var(--line-soft);
+      background: var(--surface-2);
+    }
+
+    .feature-item strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 1rem;
+    }
+
+    .feature-item p {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    .expertise-group {
+      padding: 16px 0;
+      border-top: 1px solid var(--line-soft);
+    }
+
+    .expertise-group:first-of-type { border-top: 0; padding-top: 0; }
+
+    .expertise-group h3 {
+      margin: 0 0 8px;
+      font-size: 1rem;
+      letter-spacing: -0.01em;
+    }
+
+    .about-copy {
+      max-width: 900px;
+    }
+
+    .link-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .md-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 14px 16px;
+      border-radius: 16px;
+      text-decoration: none;
+      border: 1px solid var(--line-soft);
+      background: var(--surface-2);
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .md-link small {
+      display: block;
+      margin-top: 2px;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .footer {
+      margin-top: var(--space-5);
+      padding-top: 22px;
+      border-top: 1px solid var(--line-soft);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 16px;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .footer-actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .state-layer {
+      position: absolute;
+      inset: 0;
+      background: currentColor;
+      opacity: 0;
+      transition: opacity var(--transition);
+      pointer-events: none;
+    }
+
+    .md-btn:hover .state-layer,
+    .md-icon-btn:hover .state-layer,
+    .md-chip:hover .state-layer,
+    .md-link:hover .state-layer {
+      opacity: 0.05;
+    }
+
+    .md-btn:focus-visible,
+    .md-icon-btn:focus-visible,
+    .md-link:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    @media (max-width: 1040px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .expertise-card,
+      .role-fit-card,
+      .about-card,
+      .education-card,
+      .certs-card,
+      .links-card {
+        grid-column: span 12;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .app-bar-inner,
+      main {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .hero-card,
+      .md-card,
+      .profile-panel,
+      .stats-panel {
+        padding: 20px;
+      }
+
+      .hero h1 {
+        font-size: clamp(2rem, 8vw, 3rem);
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .app-title-meta span {
+        display: none;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .app-actions {
+        gap: 8px;
+      }
+
+      .md-btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .action-row {
+        align-items: stretch;
+      }
+    }
+  </style>
 </head>
 <body>
-<a class="skip-link" href="#main-content">Skip to main content</a>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-<header class="top-app-bar" role="banner" aria-label="Top app bar">
-  <div class="app-bar-inner">
-    <div class="app-title" aria-label="Site title">
-      <div class="avatar-dot" aria-hidden="true">DM</div>
-      <span>Denny Mathew</span>
-      <span style="color: var(--md-sys-color-on-surface-variant); font-weight: 500;">Senior Software Engineer</span>
-    </div>
-    <div class="app-actions" aria-label="Header actions">
-      <a class="md-icon-btn" href="https://github.com/dennym55" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile">
-        <span class="material-symbols-outlined" aria-hidden="true">code</span>
-        <span class="state-layer"></span>
-      </a>
-      <a class="md-icon-btn" href="https://www.linkedin.com/in/dennym-space/" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile">
-        <span class="material-symbols-outlined" aria-hidden="true">person</span>
-        <span class="state-layer"></span>
-      </a>
-      <a class="md-icon-btn" href="https://www.youtube.com/@denny-mathew" target="_blank" rel="noopener noreferrer" aria-label="Open YouTube channel">
-        <span class="material-symbols-outlined" aria-hidden="true">smart_display</span>
-        <span class="state-layer"></span>
-      </a>
-      <button id="themeToggle" class="md-icon-btn" type="button" aria-label="Toggle light and dark theme" aria-pressed="false">
-        <span id="themeIcon" class="material-symbols-outlined" aria-hidden="true">dark_mode</span>
-        <span class="state-layer"></span>
-      </button>
-    </div>
-  </div>
-</header>
+  <header class="top-app-bar" role="banner" aria-label="Top app bar">
+    <div class="app-bar-inner">
+      <div class="app-title" aria-label="Site title">
+        <div class="avatar-dot" aria-hidden="true">DM</div>
+        <div class="app-title-meta">
+          <strong>Denny Mathew</strong>
+          <span>Senior Java Backend Engineer</span>
+        </div>
+      </div>
 
-<main id="main-content" role="main">
-  <section class="hero-card" aria-labelledby="hero-title">
-    <div class="hero-content">
-      <h1 id="hero-title">Denny Mathew</h1>
-      <p class="hero-subtitle">Designing scalable backend architectures and cloud-native systems.</p>
-      <p class="hero-tags">Java - Spring Boot - Azure - Microservices - Distributed Systems - DevOps</p>
-
-      <div class="action-row" aria-label="Primary profile links">
-        <a class="md-btn primary" href="https://github.com/dennym55" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile">
+      <div class="app-actions" aria-label="Header actions">
+        <a class="md-icon-btn" href="https://github.com/dennym55" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile">
           <span class="material-symbols-outlined" aria-hidden="true">code</span>
-          GitHub
           <span class="state-layer"></span>
         </a>
-        <a class="md-btn tonal" href="https://www.linkedin.com/in/dennym-space/" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile">
+        <a class="md-icon-btn" href="https://www.linkedin.com/in/dennym-space/" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile">
           <span class="material-symbols-outlined" aria-hidden="true">work</span>
-          LinkedIn
           <span class="state-layer"></span>
         </a>
-        <a class="md-btn tonal" href="https://www.youtube.com/@denny-mathew" target="_blank" rel="noopener noreferrer" aria-label="Open YouTube channel">
-          <span class="material-symbols-outlined" aria-hidden="true">smart_display</span>
-          YouTube
-          <span class="state-layer"></span>
-        </a>
-        <a class="md-btn tonal" href="https://www.scaler.com/academy/profile/e78bd859848b/" target="_blank" rel="noopener noreferrer" aria-label="Open Scaler profile">
+        <a class="md-icon-btn" href="https://www.scaler.com/academy/profile/e78bd859848b/" target="_blank" rel="noopener noreferrer" aria-label="Open Scaler profile">
           <span class="material-symbols-outlined" aria-hidden="true">school</span>
-          Scaler Profile
+          <span class="state-layer"></span>
+        </a>
+        <a class="md-icon-btn" href="https://www.youtube.com/@denny-mathew" target="_blank" rel="noopener noreferrer" aria-label="Open YouTube channel">
+          <span class="material-symbols-outlined" aria-hidden="true">smart_display</span>
+          <span class="state-layer"></span>
+        </a>
+        <button id="themeToggle" class="md-icon-btn" type="button" aria-label="Toggle light and dark theme" aria-pressed="false">
+          <span id="themeIcon" class="material-symbols-outlined" aria-hidden="true">dark_mode</span>
+          <span class="state-layer"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <article class="hero-card">
+        <div class="eyebrow">
+          <span class="material-symbols-outlined" aria-hidden="true">bolt</span>
+          Open to Remote & Europe Opportunities
+        </div>
+
+        <h1 id="hero-title">
+          Denny Mathew
+          <span>Senior Java Backend Engineer</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          I build scalable backend systems, modern APIs, and cloud-native services with a strong focus on Java, Spring Boot, microservices, distributed systems, and enterprise modernization.
+        </p>
+
+        <p class="hero-tags">
+          Java • Spring Boot • REST APIs • Microservices • Distributed Systems • SQL • CI/CD • Docker • Kubernetes • Azure
+        </p>
+
+        <p class="hero-note">
+          Best aligned with Senior Java Backend, Backend Platform, API Modernization, and Integration Engineering roles across remote and Europe-based teams.
+        </p>
+
+        <div class="action-row" aria-label="Primary profile links">
+          <!-- Replace /Denny_Mathew_Resume.pdf with your actual hosted resume path -->
+          <a class="md-btn primary" href="/Denny_Mathew_Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="View resume">
+            <span class="material-symbols-outlined" aria-hidden="true">description</span>
+            View Resume
+            <span class="state-layer"></span>
+          </a>
+
+          <a class="md-btn secondary" href="https://www.linkedin.com/in/dennym-space/" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile">
+            <span class="material-symbols-outlined" aria-hidden="true">work</span>
+            LinkedIn
+            <span class="state-layer"></span>
+          </a>
+
+          <a class="md-btn secondary" href="https://github.com/dennym55" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile">
+            <span class="material-symbols-outlined" aria-hidden="true">code</span>
+            GitHub
+            <span class="state-layer"></span>
+          </a>
+
+          <a class="md-btn tonal" href="mailto:dennymathew.dev@gmail.com" aria-label="Send email">
+            <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+            Email
+            <span class="state-layer"></span>
+          </a>
+        </div>
+      </article>
+
+      <div class="hero-side">
+        <aside class="panel profile-panel" aria-label="Profile summary">
+          <a
+            id="profileAvatar"
+            class="profile-avatar"
+            href="https://www.linkedin.com/in/dennym-space/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open LinkedIn profile of Denny Mathew"
+            title="Open LinkedIn profile"
+          >
+            <img
+              id="profileImage"
+              src="https://media.licdn.com/dms/image/v2/D5603AQEo4OGfbhVN3A/profile-displayphoto-crop_800_800/B56ZxN9g..J4AI-/0/1770834499056?e=1773878400&v=beta&t=2C6ww3bmpKxBm1QARHUIrnkryVQODutUgSPU4T2Q0fA"
+              alt="Portrait of Denny Mathew"
+              decoding="async"
+              referrerpolicy="no-referrer"
+            />
+            <span class="initials" aria-hidden="true">DM</span>
+          </a>
+
+          <h2>Denny Mathew</h2>
+          <p>Senior Java Backend Engineer focused on scalable APIs, modern backend systems, and enterprise modernization.</p>
+
+          <div class="status-badges">
+            <span class="badge">
+              <span class="material-symbols-outlined" aria-hidden="true">public</span>
+              Remote Ready
+            </span>
+            <span class="badge">
+              <span class="material-symbols-outlined" aria-hidden="true">schedule</span>
+              CET Overlap
+            </span>
+            <span class="badge">
+              <span class="material-symbols-outlined" aria-hidden="true">apartment</span>
+              Enterprise Domains
+            </span>
+          </div>
+        </aside>
+
+        <aside class="panel stats-panel" aria-label="Quick stats">
+          <div class="stats-grid">
+            <div class="stat">
+              <strong>12+ yrs</strong>
+              <span>Software engineering experience</span>
+            </div>
+            <div class="stat">
+              <strong>Java</strong>
+              <span>Backend & integration focus</span>
+            </div>
+            <div class="stat">
+              <strong>BFSI + Health</strong>
+              <span>Insurance, banking, healthcare domains</span>
+            </div>
+            <div class="stat">
+              <strong>M.Sc. CS</strong>
+              <span>Scaler / Woolf University</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="sections" aria-label="Profile sections">
+      <article class="md-card what-i-bring-card" aria-labelledby="bring-title">
+        <h2 id="bring-title">
+          <span class="material-symbols-outlined" aria-hidden="true">star</span>
+          What I Bring
+        </h2>
+
+        <div class="feature-list">
+          <div class="feature-item">
+            <strong>Backend Engineering</strong>
+            <p>I design and develop Java backend services with a focus on maintainability, clarity, and reliable delivery in enterprise environments.</p>
+          </div>
+
+          <div class="feature-item">
+            <strong>API Modernization</strong>
+            <p>Strong alignment with REST API development, integration engineering, XML/JSON workflows, and modernization of legacy SOAP-based systems.</p>
+          </div>
+
+          <div class="feature-item">
+            <strong>Distributed Systems Thinking</strong>
+            <p>Comfortable with system design concepts, scalability, consistency, caching, orchestration, and architecture trade-offs for modern backend systems.</p>
+          </div>
+
+          <div class="feature-item">
+            <strong>Cloud & Delivery Mindset</strong>
+            <p>Experience and strong working knowledge across CI/CD, Azure DevOps, Docker, Kubernetes, Linux environments, production support, and release workflows.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="md-card expertise-card" aria-labelledby="expertise-title">
+        <h2 id="expertise-title">
+          <span class="material-symbols-outlined" aria-hidden="true">code_blocks</span>
+          Core Expertise
+        </h2>
+
+        <div class="expertise-group">
+          <h3>Backend</h3>
+          <p>Java, Spring Boot, REST APIs, Backend Development, Microservices, API Design, Integration Engineering</p>
+        </div>
+
+        <div class="expertise-group">
+          <h3>Architecture</h3>
+          <p>Distributed Systems, System Design, HLD, LLD, Scalable Backend Architecture, Service Design</p>
+        </div>
+
+        <div class="expertise-group">
+          <h3>Data & Integration</h3>
+          <p>SQL, Redis, XML/JSON Processing, SOAP, SOAP to REST Migration, API-Centric Workflows</p>
+        </div>
+
+        <div class="expertise-group">
+          <h3>Cloud & DevOps</h3>
+          <p>Azure, Docker, Kubernetes, CI/CD, Azure DevOps, Linux, Deployment Support</p>
+        </div>
+
+        <div class="expertise-group">
+          <h3>Engineering Practices</h3>
+          <p>Agile, Scrum, Scrum Ceremonies, Production Support, Release Management, Cross-Functional Collaboration, Mentoring</p>
+        </div>
+      </article>
+
+      <article class="md-card role-fit-card" aria-labelledby="fit-title">
+        <h2 id="fit-title">
+          <span class="material-symbols-outlined" aria-hidden="true">workspaces</span>
+          Role Fit
+        </h2>
+
+        <p><strong>Target Roles:</strong><br />Senior Java Backend Engineer, Backend Platform Engineer, API Modernization Engineer, Integration Engineer</p>
+        <p><strong>Domain Experience:</strong><br />Insurance, Banking, Healthcare, Enterprise Software</p>
+        <p><strong>Work Preference:</strong><br />Remote, Europe-based opportunities, contract or full-time roles</p>
+        <p><strong>Strengths:</strong><br />Backend systems, API modernization, system design thinking, enterprise integration, delivery collaboration</p>
+      </article>
+
+      <article class="md-card about-card" aria-labelledby="about-title">
+        <h2 id="about-title">
+          <span class="material-symbols-outlined" aria-hidden="true">info</span>
+          About
+        </h2>
+
+        <div class="about-copy">
+          <p>I am a Senior Java Backend Engineer with 12+ years of software development experience across backend engineering, API integration, enterprise application development, and legacy modernization.</p>
+
+          <p>My core focus is building backend systems using Java, Spring Boot, REST APIs, microservices, SQL, and distributed systems. I have worked across insurance, banking, healthcare, and enterprise environments, contributing to backend service development, SOAP-to-REST modernization, XML-to-JSON transformation, integration workflows, production support, and release coordination.</p>
+
+          <p>I am comfortable working across the software delivery lifecycle — from requirement analysis and system design discussions to implementation, debugging, deployment support, and collaboration with cross-functional teams.</p>
+
+          <p>My M.Sc. in Computer Science strengthened my understanding of system design, distributed systems, database internals, caching, authentication, cloud-native architecture, containerization, orchestration, and large-scale backend engineering principles.</p>
+
+          <p>I am currently open to Senior Java Backend, Backend Platform, API Modernization, and Integration Engineering roles across remote and Europe-based teams.</p>
+        </div>
+      </article>
+
+      <article class="md-card education-card" aria-labelledby="education-title">
+        <h2 id="education-title">
+          <span class="material-symbols-outlined" aria-hidden="true">school</span>
+          Education
+        </h2>
+
+        <p><strong>M.Sc. Computer Science</strong><br />Scaler (Woolf University)</p>
+        <p><strong>B.Tech Computer Science</strong><br />CUSAT</p>
+      </article>
+
+      <article class="md-card certs-card" aria-labelledby="cert-title">
+        <h2 id="cert-title">
+          <span class="material-symbols-outlined" aria-hidden="true">workspace_premium</span>
+          Certifications
+        </h2>
+
+        <div class="link-list">
+          <a class="md-link" href="https://credsverse.com/credentials/6e9f85ea-493f-46c1-9852-08c9bf0134ec" target="_blank" rel="noopener noreferrer">
+            <span>
+              AI Engineering Specialization - ByteByteGo
+              <small>Modern AI systems and large-scale architecture learning</small>
+            </span>
+            <span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>
+          </a>
+
+          <a class="md-link" href="https://learn.microsoft.com/en-us/users/dennymathew-6625/credentials/e9b5fb0770641186" target="_blank" rel="noopener noreferrer">
+            <span>
+              Microsoft Certified: Azure AI Fundamentals
+              <small>Cloud and AI fundamentals on Azure</small>
+            </span>
+            <span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>
+          </a>
+
+          <a class="md-link" href="https://learn.microsoft.com/en-us/users/dennymathew-6625/credentials/f63d8f0a7fc8a568" target="_blank" rel="noopener noreferrer">
+            <span>
+              Microsoft Certified: Azure Fundamentals
+              <small>Cloud platform fundamentals</small>
+            </span>
+            <span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>
+          </a>
+
+          <a class="md-link" href="https://d1bm918zlnq37v.cloudfront.net/CECTemp/Certificates/CA-11-2025-26/91.jpg" target="_blank" rel="noopener noreferrer">
+            <span>
+              Advanced AI Engineering - IIT Roorkee (with Scaler)
+              <small>Structured advanced learning in AI engineering</small>
+            </span>
+            <span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="md-card links-card" aria-labelledby="links-title">
+        <h2 id="links-title">
+          <span class="material-symbols-outlined" aria-hidden="true">link</span>
+          Professional Links
+        </h2>
+
+        <div class="link-list">
+          <a class="md-link" href="https://www.linkedin.com/in/dennym-space/" target="_blank" rel="noopener noreferrer">
+            <span>
+              LinkedIn
+              <small>Professional profile and job-facing presence</small>
+            </span>
+            <span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>
+          </a>
+
+          <a class="md-link" href="https://github.com/dennym55" target="_blank" rel="noopener noreferrer">
+            <span>
+              GitHub
+              <small>Code, projects, and technical exploration</small>
+            </span>
+            <span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>
+          </a>
+
+          <a class="md-link" href="https://www.scaler.com/academy/profile/e78bd859848b/" target="_blank" rel="noopener noreferrer">
+            <span>
+              Scaler Profile
+              <small>M.Sc. CS and structured technical learning</small>
+            </span>
+            <span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>
+          </a>
+
+          <a class="md-link" href="https://www.youtube.com/@denny-mathew" target="_blank" rel="noopener noreferrer">
+            <span>
+              YouTube
+              <small>Technical or personal public-facing content</small>
+            </span>
+            <span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>
+          </a>
+
+          <a class="md-link" href="mailto:dennymathew.dev@gmail.com">
+            <span>
+              Email
+              <small>dennymathew.dev@gmail.com</small>
+            </span>
+            <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer" role="contentinfo">
+      <div>© 2026 Denny Mathew • Senior Java Backend Engineer • Open to Remote & Europe Roles</div>
+
+      <div class="footer-actions" aria-label="Footer actions">
+        <a class="md-icon-btn" href="https://github.com/dennym55" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile from footer">
+          <span class="material-symbols-outlined" aria-hidden="true">code</span>
+          <span class="state-layer"></span>
+        </a>
+        <a class="md-icon-btn" href="https://www.linkedin.com/in/dennym-space/" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile from footer">
+          <span class="material-symbols-outlined" aria-hidden="true">work</span>
+          <span class="state-layer"></span>
+        </a>
+        <a class="md-icon-btn" href="mailto:dennymathew.dev@gmail.com" aria-label="Send email from footer">
+          <span class="material-symbols-outlined" aria-hidden="true">mail</span>
           <span class="state-layer"></span>
         </a>
       </div>
-    </div>
+    </footer>
+  </main>
 
-    <aside class="hero-media" aria-label="Profile image">
-      <a
-        id="profileAvatar"
-        class="profile-avatar"
-        href="https://www.linkedin.com/in/dennym-space/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Open LinkedIn profile of Denny Mathew"
-        title="Open LinkedIn profile"
-      >
-        <img
-          id="profileImage"
-          src="https://media.licdn.com/dms/image/v2/D5603AQEo4OGfbhVN3A/profile-displayphoto-crop_800_800/B56ZxN9g..J4AI-/0/1770834499056?e=1773878400&amp;v=beta&amp;t=2C6ww3bmpKxBm1QARHUIrnkryVQODutUgSPU4T2Q0fA"
-          alt="Portrait of Denny Mathew"
-          decoding="async"
-          referrerpolicy="no-referrer"
-        >
-        <span class="initials" aria-hidden="true">DM</span>
-      </a>
-    </aside>
-  </section>
+  <script>
+    (function () {
+      const body = document.body;
+      const themeToggle = document.getElementById("themeToggle");
+      const themeIcon = document.getElementById("themeIcon");
+      const avatar = document.getElementById("profileAvatar");
+      const profileImage = document.getElementById("profileImage");
 
-  <section class="sections" aria-label="Profile sections">
-    <article class="md-card about-card" aria-labelledby="about-title">
-      <h2 id="about-title"><span class="material-symbols-outlined" aria-hidden="true">info</span>About</h2>
-      <div class="about-copy">
-        <p>I've spent over 14 years growing with technology - not by staying in one lane, but by expanding across them with intent.</p>
-        <p>I began as a Java developer, building a strong foundation in object-oriented programming and clean system thinking. That grounding led me into Android development, where I evolved from Java to Kotlin as the ecosystem matured. During this phase, I was simultaneously contributing to an Angular project - navigating mobile and frontend systems in parallel. Working across layers at the same time strengthened my adaptability, sharpened my ability to switch contexts quickly, and deepened my collaboration with diverse teams.</p>
-        <p>Over time, my curiosity shifted from building features to understanding the systems behind them. I transitioned back into backend engineering, designing Java-based services and microservices, focusing on scalability, data consistency, and architectural clarity. I expanded into data workflows, strengthened my SQL expertise, and began leveraging Python for data and AI-oriented use cases.</p>
-        <p>Most recently, I took a deliberate academic pause to complete my M.Sc. in Computer Science. That phase allowed me to revisit and solidify core fundamentals - distributed systems, database internals, consistency models, caching strategies, messaging architectures, authentication systems, containerization, orchestration, and system design principles. It helped me connect practical experience with theoretical depth, strengthening my ability to reason about trade-offs from first principles.</p>
-        <p>Alongside this, I pursued parallel certifications and structured programs from reputed institutions and respected educators. I completed an AI program from IIT Roorkee and participated in the ByteByteGo AI cohort, further deepening my understanding of modern AI systems and large-scale architectures. These experiences complemented my hands-on background and expanded my perspective on how intelligent systems are designed, scaled, and integrated into real-world products.</p>
-        <p>Across mobile, frontend, backend, data, distributed systems, and AI, my journey reflects disciplined curiosity and adaptability. I'm comfortable stepping into ambiguity, learning quickly, and operating across technical layers - from writing production code to thinking through architectural decisions.</p>
-        <p>Today, I approach engineering with a systems mindset. I value clarity over complexity, fundamentals over shortcuts, and sustainable design over quick wins. I enjoy building solutions that are not just functional, but resilient, scalable, and thoughtfully engineered.</p>
-      </div>
-    </article>
-
-    <article class="md-card skills-card" aria-labelledby="skills-title">
-      <h2 id="skills-title"><span class="material-symbols-outlined" aria-hidden="true">code_blocks</span>Core Skills</h2>
-      <div class="skills-grid" role="list" aria-label="Skills list">
-        <span class="md-chip" role="listitem"><span class="material-symbols-outlined" aria-hidden="true">terminal</span>Java<span class="state-layer"></span></span>
-        <span class="md-chip" role="listitem"><span class="material-symbols-outlined" aria-hidden="true">memory</span>Spring Boot<span class="state-layer"></span></span>
-        <span class="md-chip" role="listitem"><span class="material-symbols-outlined" aria-hidden="true">lan</span>Microservices<span class="state-layer"></span></span>
-        <span class="md-chip" role="listitem"><span class="material-symbols-outlined" aria-hidden="true">cloud</span>Azure<span class="state-layer"></span></span>
-        <span class="md-chip" role="listitem"><span class="material-symbols-outlined" aria-hidden="true">inventory_2</span>Docker<span class="state-layer"></span></span>
-        <span class="md-chip" role="listitem"><span class="material-symbols-outlined" aria-hidden="true">alt_route</span>CI/CD<span class="state-layer"></span></span>
-        <span class="md-chip" role="listitem"><span class="material-symbols-outlined" aria-hidden="true">database</span>Redis<span class="state-layer"></span></span>
-        <span class="md-chip" role="listitem"><span class="material-symbols-outlined" aria-hidden="true">storage</span>SQL<span class="state-layer"></span></span>
-        <span class="md-chip" role="listitem"><span class="material-symbols-outlined" aria-hidden="true">architecture</span>System Design<span class="state-layer"></span></span>
-        <span class="md-chip" role="listitem"><span class="material-symbols-outlined" aria-hidden="true">hub</span>Distributed Systems<span class="state-layer"></span></span>
-      </div>
-    </article>
-
-    <article class="md-card education-card" aria-labelledby="education-title">
-      <h2 id="education-title"><span class="material-symbols-outlined" aria-hidden="true">school</span>Education</h2>
-      <p><strong>M.Sc. Computer Science</strong><br>Scaler (Woolf University)</p>
-      <p><strong>B.Tech Computer Science</strong><br>CUSAT</p>
-    </article>
-
-    <article class="md-card certs-card" aria-labelledby="cert-title">
-      <h2 id="cert-title"><span class="material-symbols-outlined" aria-hidden="true">workspace_premium</span>Certifications</h2>
-      <div class="cert-list">
-        <p><a class="md-link" href="https://credsverse.com/credentials/6e9f85ea-493f-46c1-9852-08c9bf0134ec" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>AI Engineering Specialization - ByteByteGo<span class="state-layer"></span></a></p>
-        <p><a class="md-link" href="https://learn.microsoft.com/en-us/users/dennymathew-6625/credentials/e9b5fb0770641186" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>Microsoft Certified: Azure AI Fundamentals<span class="state-layer"></span></a></p>
-        <p><a class="md-link" href="https://learn.microsoft.com/en-us/users/dennymathew-6625/credentials/f63d8f0a7fc8a568" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>Microsoft Certified: Azure Fundamentals<span class="state-layer"></span></a></p>
-        <p><a class="md-link" href="https://d1bm918zlnq37v.cloudfront.net/CECTemp/Certificates/CA-11-2025-26/91.jpg" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>Advanced AI Engineering - IIT Roorkee (with Scaler)<span class="state-layer"></span></a></p>
-      </div>
-    </article>
-  </section>
-
-  <footer role="contentinfo">
-    <div>&copy; 2026 Denny Mathew - dennymathew.me</div>
-    <div class="footer-actions" aria-label="Footer actions">
-      <a class="md-icon-btn" href="https://github.com/dennym55" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile from footer">
-        <span class="material-symbols-outlined" aria-hidden="true">code</span>
-        <span class="state-layer"></span>
-      </a>
-      <a class="md-icon-btn" href="https://www.linkedin.com/in/dennym-space/" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile from footer">
-        <span class="material-symbols-outlined" aria-hidden="true">person</span>
-        <span class="state-layer"></span>
-      </a>
-      <a class="md-icon-btn" href="https://www.youtube.com/@denny-mathew" target="_blank" rel="noopener noreferrer" aria-label="Open YouTube channel from footer">
-        <span class="material-symbols-outlined" aria-hidden="true">smart_display</span>
-        <span class="state-layer"></span>
-      </a>
-    </div>
-  </footer>
-</main>
-
-<script>
-(function () {
-  const body = document.body;
-  const themeToggle = document.getElementById("themeToggle");
-  const themeIcon = document.getElementById("themeIcon");
-  const avatar = document.getElementById("profileAvatar");
-  const profileImage = document.getElementById("profileImage");
-
-  function applyTheme(theme) {
-    const isDark = theme === "dark";
-    body.classList.toggle("dark", isDark);
-    themeToggle.setAttribute("aria-pressed", String(isDark));
-    themeIcon.textContent = isDark ? "light_mode" : "dark_mode";
-    try {
-      localStorage.setItem("theme", theme);
-    } catch (err) {
-      // Ignore storage errors.
-    }
-  }
-
-  function initialTheme() {
-    try {
-      const saved = localStorage.getItem("theme");
-      if (saved === "light" || saved === "dark") {
-        return saved;
+      function applyTheme(theme) {
+        const isDark = theme === "dark";
+        body.classList.toggle("dark", isDark);
+        themeToggle.setAttribute("aria-pressed", String(isDark));
+        themeIcon.textContent = isDark ? "light_mode" : "dark_mode";
+        try {
+          localStorage.setItem("theme", theme);
+        } catch (err) {}
       }
-    } catch (err) {
-      // Ignore storage errors.
-    }
-    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-  }
 
-  applyTheme(initialTheme());
+      function initialTheme() {
+        try {
+          const saved = localStorage.getItem("theme");
+          if (saved === "light" || saved === "dark") return saved;
+        } catch (err) {}
+        return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
 
-  themeToggle.addEventListener("click", function () {
-    applyTheme(body.classList.contains("dark") ? "light" : "dark");
-  });
+      applyTheme(initialTheme());
 
-  if (profileImage) {
-    profileImage.addEventListener("load", function () {
-      avatar.classList.add("has-image");
-    });
-    profileImage.addEventListener("error", function () {
-      avatar.classList.remove("has-image");
-    });
-  }
+      themeToggle.addEventListener("click", function () {
+        applyTheme(body.classList.contains("dark") ? "light" : "dark");
+      });
 
-})();
-</script>
+      if (profileImage) {
+        profileImage.addEventListener("load", function () {
+          avatar.classList.add("has-image");
+        });
+        profileImage.addEventListener("error", function () {
+          avatar.classList.remove("has-image");
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
-
