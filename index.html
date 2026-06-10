@@ -3,40 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Denny Mathew | Senior Java Backend Engineer</title>
-  <meta
-    name="description"
-    content="Denny Mathew is a Senior Java Backend Engineer specializing in Spring Boot, REST APIs, Microservices, Distributed Systems, API Modernization, SQL, CI/CD, Docker, Kubernetes, Azure, and cloud-native backend engineering. Open to Remote and Europe roles."
-  />
+  <meta name="description" content="Denny Mathew — Senior Java Backend Engineer. 12+ years building scalable backend systems, REST APIs, microservices, and cloud-native services. Open to Remote and Europe roles." />
   <link rel="canonical" href="https://dennymathew.me/" />
 
   <meta property="og:title" content="Denny Mathew | Senior Java Backend Engineer" />
-  <meta
-    property="og:description"
-    content="Senior Java Backend Engineer focused on Spring Boot, REST APIs, Microservices, Distributed Systems, API Modernization, SQL, CI/CD, Docker, Kubernetes, and cloud-native backend engineering."
-  />
+  <meta property="og:description" content="Senior Java Backend Engineer focused on Spring Boot, REST APIs, Microservices, Distributed Systems, and cloud-native backend engineering." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://dennymathew.me/" />
   <meta property="og:image" content="https://dennymathew.me/og-card.png" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Denny Mathew | Senior Java Backend Engineer" />
-  <meta
-    name="twitter:description"
-    content="Senior Java Backend Engineer building scalable APIs, microservices, and cloud-native backend systems."
-  />
+  <meta name="twitter:description" content="Senior Java Backend Engineer building scalable APIs, microservices, and cloud-native backend systems." />
   <meta name="twitter:image" content="https://dennymathew.me/og-card.png" />
 
-  <meta name="theme-color" content="#F6F7FB" media="(prefers-color-scheme: light)" />
-  <meta name="theme-color" content="#121722" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#0f0f1a" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
   <script type="application/ld+json">
   {
@@ -44,7 +30,6 @@
     "@type": "Person",
     "name": "Denny Mathew",
     "url": "https://dennymathew.me/",
-    "email": "mailto:dennymathew.dev@gmail.com",
     "jobTitle": "Senior Java Backend Engineer",
     "sameAs": [
       "https://www.linkedin.com/in/dennym-space/",
@@ -56,357 +41,120 @@
   </script>
 
   <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     :root {
-      color-scheme: light;
-      --bg: #f6f7fb;
-      --surface: #ffffff;
-      --surface-2: #f9fbff;
-      --text: #141a24;
-      --muted: #5e6777;
-      --line: #dbe2ee;
-      --line-soft: #e9eef6;
-      --primary: #0f766e;
-      --primary-strong: #0b5f59;
-      --primary-soft: #dff4f1;
-      --accent: #2563eb;
-      --accent-soft: #e7efff;
-      --shadow-1: 0 10px 30px rgba(15, 23, 42, 0.06);
-      --shadow-2: 0 16px 40px rgba(15, 23, 42, 0.09);
-      --radius-lg: 24px;
-      --radius-md: 18px;
+      --bg: #0b0b14;
+      --surface: #111120;
+      --surface-2: #16162a;
+      --surface-3: #1c1c32;
+      --border: rgba(255,255,255,0.07);
+      --border-hover: rgba(255,255,255,0.13);
+      --text: #f0f0ff;
+      --muted: #8888aa;
+      --muted-2: #5a5a7a;
+      --teal: #00e5cc;
+      --teal-dim: rgba(0,229,204,0.12);
+      --teal-glow: rgba(0,229,204,0.25);
+      --blue: #4f8fff;
+      --blue-dim: rgba(79,143,255,0.12);
+      --purple: #a78bfa;
+      --purple-dim: rgba(167,139,250,0.12);
+      --amber: #fbbf24;
+      --amber-dim: rgba(251,191,36,0.12);
+      --green: #34d399;
+      --green-dim: rgba(52,211,153,0.12);
+      --radius: 20px;
       --radius-sm: 12px;
-      --space-1: 8px;
-      --space-2: 16px;
-      --space-3: 24px;
-      --space-4: 32px;
-      --space-5: 48px;
-      --space-6: 64px;
-      --container: 1160px;
-      --transition: 220ms ease;
+      --radius-xs: 8px;
+      --transition: 200ms ease;
     }
 
-    body.dark {
-      color-scheme: dark;
-      --bg: #121722;
-      --surface: #191f2b;
-      --surface-2: #202838;
-      --text: #edf2fb;
-      --muted: #a4b0c3;
-      --line: #2c3648;
-      --line-soft: #243044;
-      --primary: #67d2c6;
-      --primary-strong: #84ddd3;
-      --primary-soft: #123834;
-      --accent: #7aa7ff;
-      --accent-soft: #1a2d56;
-      --shadow-1: 0 10px 30px rgba(0, 0, 0, 0.28);
-      --shadow-2: 0 16px 40px rgba(0, 0, 0, 0.35);
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      overflow-x: hidden;
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
-    html, body {
-      margin: 0;
-      min-height: 100%;
-      font-family: "Inter", sans-serif;
+    /* ─── Ambient background ─── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
       background:
-        radial-gradient(circle at top left, rgba(37, 99, 235, 0.06), transparent 24%),
-        radial-gradient(circle at top right, rgba(15, 118, 110, 0.08), transparent 22%),
-        var(--bg);
-      color: var(--text);
-      line-height: 1.65;
-      font-size: 16px;
-      scroll-behavior: smooth;
-    }
-
-    a {
-      color: inherit;
-    }
-
-    .material-symbols-outlined {
-      font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 24;
-      font-size: 20px;
-      vertical-align: middle;
-    }
-
-    .skip-link {
-      position: absolute;
-      left: -9999px;
-      top: auto;
-    }
-
-    .skip-link:focus {
-      left: 16px;
-      top: 16px;
-      z-index: 999;
-      background: var(--primary);
-      color: white;
-      padding: 10px 14px;
-      border-radius: 10px;
-    }
-
-    .top-app-bar {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      backdrop-filter: blur(16px);
-      background: color-mix(in srgb, var(--surface) 84%, transparent);
-      border-bottom: 1px solid var(--line-soft);
-    }
-
-    .app-bar-inner {
-      max-width: var(--container);
-      margin: 0 auto;
-      padding: 0 var(--space-3);
-      min-height: 72px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: var(--space-2);
-    }
-
-    .app-title {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      min-width: 0;
-    }
-
-    .avatar-dot {
-      width: 38px;
-      height: 38px;
-      border-radius: 12px;
-      display: grid;
-      place-items: center;
-      background: linear-gradient(135deg, var(--primary), var(--accent));
-      color: white;
-      font-weight: 800;
-      box-shadow: var(--shadow-1);
-      flex-shrink: 0;
-    }
-
-    .app-title-meta {
-      display: flex;
-      flex-direction: column;
-      min-width: 0;
-    }
-
-    .app-title-meta strong {
-      font-size: 0.98rem;
-      line-height: 1.2;
-    }
-
-    .app-title-meta span {
-      font-size: 0.88rem;
-      color: var(--muted);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    .app-actions {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-
-    main {
-      max-width: var(--container);
-      margin: 0 auto;
-      padding: var(--space-4) var(--space-3) var(--space-6);
-    }
-
-    .hero {
-      display: grid;
-      grid-template-columns: 1.3fr 0.7fr;
-      gap: var(--space-4);
-      align-items: stretch;
-      margin-bottom: var(--space-4);
-    }
-
-    .hero-card,
-    .panel,
-    .md-card {
-      background: color-mix(in srgb, var(--surface) 92%, transparent);
-      border: 1px solid var(--line-soft);
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow-1);
-    }
-
-    .hero-card {
-      padding: 36px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-card::before {
-      content: "";
-      position: absolute;
-      inset: auto -80px -80px auto;
-      width: 260px;
-      height: 260px;
-      border-radius: 50%;
-      background: radial-gradient(circle, color-mix(in srgb, var(--primary) 20%, transparent), transparent 70%);
+        radial-gradient(ellipse 80% 60% at 20% -10%, rgba(0,229,204,0.06) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 50% at 80% 110%, rgba(79,143,255,0.07) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 50% 50%, rgba(167,139,250,0.04) 0%, transparent 70%);
       pointer-events: none;
+      z-index: 0;
     }
 
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 0.84rem;
-      font-weight: 700;
-      color: var(--primary-strong);
-      background: var(--primary-soft);
-      border: 1px solid color-mix(in srgb, var(--primary) 18%, transparent);
-      padding: 8px 12px;
-      border-radius: 999px;
-      margin-bottom: 16px;
-    }
-
-    .hero h1 {
-      margin: 0;
-      font-size: clamp(2.3rem, 5vw, 3.8rem);
-      line-height: 1.05;
-      letter-spacing: -0.04em;
-    }
-
-    .hero h1 span {
-      display: block;
-      color: var(--primary);
-    }
-
-    .hero-subtitle {
-      margin: 18px 0 12px;
-      font-size: 1.1rem;
-      color: var(--muted);
-      max-width: 760px;
-    }
-
-    .hero-tags {
-      margin: 0 0 10px;
-      color: var(--text);
-      font-weight: 500;
-    }
-
-    .hero-note {
-      margin: 16px 0 0;
-      color: var(--muted);
-      font-size: 0.97rem;
-    }
-
-    .action-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      align-items: center;
-      margin-top: 24px;
-    }
-
-    .md-btn,
-    .md-icon-btn,
-    .md-chip,
-    .md-link {
+    /* ─── Layout wrapper ─── */
+    .page {
       position: relative;
-      overflow: hidden;
-      transition:
-        transform var(--transition),
-        box-shadow var(--transition),
-        background-color var(--transition),
-        border-color var(--transition),
-        color var(--transition);
+      z-index: 1;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
     }
 
-    .md-btn {
-      min-height: 44px;
-      padding: 0 16px;
-      border-radius: 14px;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      border: 1px solid transparent;
+    /* ─── Top bar ─── */
+    .topbar {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 40px;
+    }
+
+    .theme-btn {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 0.82rem;
       font-weight: 600;
-      font-size: 0.96rem;
       cursor: pointer;
+      transition: all var(--transition);
+      font-family: inherit;
+      letter-spacing: 0.02em;
     }
+    .theme-btn:hover { color: var(--text); border-color: var(--border-hover); }
 
-    .md-btn.secondary {
-      background: var(--surface);
-      color: var(--text);
-      border-color: var(--line);
-    }
-
-    .md-btn.tonal {
-      background: var(--primary-soft);
-      color: var(--primary-strong);
-      border-color: color-mix(in srgb, var(--primary) 15%, transparent);
-    }
-
-    .md-btn:hover,
-    .md-icon-btn:hover,
-    .md-chip:hover,
-    .md-link:hover {
-      transform: translateY(-1px);
-    }
-
-    .md-btn:hover {
-      box-shadow: var(--shadow-1);
-    }
-
-    .md-icon-btn {
-      width: 42px;
-      height: 42px;
-      border-radius: 14px;
-      display: inline-grid;
-      place-items: center;
-      text-decoration: none;
-      border: 1px solid var(--line);
-      background: var(--surface);
-      color: var(--text);
-      cursor: pointer;
-    }
-
-    .hero-side {
-      display: grid;
-      gap: var(--space-3);
-    }
-
-    .profile-panel {
-      padding: 28px;
-      display: grid;
-      justify-items: center;
+    /* ─── Profile header ─── */
+    .profile-header {
       text-align: center;
-      min-height: 100%;
-      align-content: start;
+      margin-bottom: 40px;
     }
 
-    .profile-avatar {
-      width: 132px;
-      height: 132px;
-      border-radius: 28px;
-      background: linear-gradient(
-        135deg,
-        color-mix(in srgb, var(--primary) 18%, var(--surface)),
-        color-mix(in srgb, var(--accent) 18%, var(--surface))
-      );
-      border: 1px solid var(--line-soft);
-      display: grid;
-      place-items: center;
-      color: var(--primary);
+    .avatar-wrap {
+      display: inline-block;
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .avatar {
+      width: 108px;
+      height: 108px;
+      border-radius: 50%;
+      border: 2px solid var(--border);
+      background: linear-gradient(135deg, var(--teal-dim), var(--blue-dim));
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 2.4rem;
       font-weight: 800;
-      position: relative;
+      color: var(--teal);
       overflow: hidden;
-      box-shadow: var(--shadow-1);
-      margin-bottom: 16px;
+      position: relative;
+      box-shadow: 0 0 0 4px rgba(0,229,204,0.08), 0 0 40px rgba(0,229,204,0.12);
     }
 
-    .profile-avatar img {
+    .avatar img {
       position: absolute;
       inset: 0;
       width: 100%;
@@ -415,688 +163,839 @@
       display: none;
     }
 
-    .profile-avatar.has-image img {
-      display: block;
+    .avatar.loaded img { display: block; }
+    .avatar.loaded .initials { display: none; }
+
+    .status-dot {
+      position: absolute;
+      bottom: 4px;
+      right: 4px;
+      width: 18px;
+      height: 18px;
+      background: var(--green);
+      border-radius: 50%;
+      border: 3px solid var(--bg);
+      box-shadow: 0 0 10px var(--green);
     }
 
-    .profile-avatar.has-image .initials {
-      display: none;
+    .profile-name {
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      line-height: 1.1;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, var(--text) 40%, var(--teal) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
 
-    .profile-panel h2 {
-      margin: 4px 0 6px;
-      font-size: 1.3rem;
-      line-height: 1.2;
-    }
-
-    .profile-panel p {
-      margin: 0 0 10px;
+    .profile-role {
+      font-size: 1rem;
       color: var(--muted);
-      font-size: 0.96rem;
+      font-weight: 500;
+      margin-bottom: 14px;
     }
 
-    .status-badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      justify-content: center;
-      margin-top: 10px;
-    }
-
-    .badge {
+    .profile-badge {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 8px 10px;
-      font-size: 0.84rem;
-      font-weight: 600;
+      background: var(--green-dim);
+      color: var(--green);
+      border: 1px solid rgba(52,211,153,0.2);
+      padding: 6px 14px;
       border-radius: 999px;
-      border: 1px solid var(--line-soft);
-      background: var(--surface-2);
+      font-size: 0.83rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); flex-shrink: 0; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.8)} }
+
+    /* ─── Quick stats row ─── */
+    .stats-row {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 36px;
+    }
+
+    .stat-pill {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 14px 22px;
+      min-width: 110px;
+      flex: 1;
+      max-width: 160px;
+    }
+
+    .stat-pill strong {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--teal);
+      letter-spacing: -0.03em;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .stat-pill span {
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-weight: 500;
+      text-align: center;
+    }
+
+    /* ─── Link buttons (link-in-bio style) ─── */
+    .links-section {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      text-decoration: none;
       color: var(--text);
+      font-weight: 600;
+      font-size: 0.96rem;
+      transition: all var(--transition);
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
     }
 
-    .stats-panel {
-      padding: 22px;
+    .link-btn::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity var(--transition);
     }
 
-    .stats-grid {
+    .link-btn:hover { border-color: var(--border-hover); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,0,0,0.3); }
+    .link-btn:hover::before { opacity: 1; }
+
+    .link-btn.linkedin::before { background: linear-gradient(90deg, rgba(10,102,194,0.08), transparent); }
+    .link-btn.github::before { background: linear-gradient(90deg, rgba(255,255,255,0.04), transparent); }
+    .link-btn.scaler::before { background: linear-gradient(90deg, rgba(79,143,255,0.08), transparent); }
+    .link-btn.youtube::before { background: linear-gradient(90deg, rgba(255,0,0,0.08), transparent); }
+    .link-btn.resume-dl::before { background: linear-gradient(90deg, rgba(0,229,204,0.08), transparent); }
+
+    .link-btn-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .link-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .link-icon svg { width: 22px; height: 22px; }
+    .link-icon img { width: 22px; height: 22px; object-fit: contain; }
+
+    .link-btn.linkedin .link-icon { background: rgba(10,102,194,0.15); }
+    .link-btn.github .link-icon { background: rgba(255,255,255,0.07); }
+    .link-btn.scaler .link-icon { background: var(--blue-dim); }
+    .link-btn.youtube .link-icon { background: rgba(255,0,0,0.1); }
+    .link-btn.resume-dl .link-icon { background: var(--teal-dim); }
+
+    .link-btn-text { line-height: 1.2; }
+    .link-btn-label { display: block; font-size: 0.96rem; font-weight: 700; }
+    .link-btn-sub { display: block; font-size: 0.8rem; color: var(--muted); font-weight: 500; margin-top: 1px; }
+
+    .link-arrow {
+      position: relative;
+      z-index: 1;
+      color: var(--muted-2);
+      font-size: 1.1rem;
+      transition: transform var(--transition), color var(--transition);
+    }
+    .link-btn:hover .link-arrow { transform: translateX(3px); color: var(--text); }
+
+    /* ─── Section card ─── */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      margin-bottom: 16px;
+    }
+
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .section-label-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--teal);
+      flex-shrink: 0;
+    }
+
+    /* ─── About ─── */
+    .about-text { color: var(--muted); font-size: 0.97rem; line-height: 1.75; }
+    .about-text strong { color: var(--text); }
+    .about-text p + p { margin-top: 14px; }
+
+    /* ─── Skills ─── */
+    .skills-section { margin-bottom: 16px; }
+
+    .skill-group { margin-bottom: 24px; }
+    .skill-group:last-child { margin-bottom: 0; }
+
+    .skill-group-title {
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 6px 12px;
+      border-radius: var(--radius-xs);
+      font-size: 0.82rem;
+      font-weight: 600;
+      border: 1px solid transparent;
+      transition: all var(--transition);
+    }
+
+    .skill-tag.teal { background: var(--teal-dim); color: var(--teal); border-color: rgba(0,229,204,0.15); }
+    .skill-tag.blue { background: var(--blue-dim); color: var(--blue); border-color: rgba(79,143,255,0.15); }
+    .skill-tag.purple { background: var(--purple-dim); color: var(--purple); border-color: rgba(167,139,250,0.15); }
+    .skill-tag.amber { background: var(--amber-dim); color: var(--amber); border-color: rgba(251,191,36,0.15); }
+    .skill-tag.green { background: var(--green-dim); color: var(--green); border-color: rgba(52,211,153,0.15); }
+
+    .skill-tag:hover { transform: translateY(-1px); filter: brightness(1.1); }
+
+    /* ─── Education & Certs ─── */
+    .edu-item, .cert-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .edu-item:last-child, .cert-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .edu-item:first-child, .cert-item:first-child { padding-top: 0; }
+
+    .edu-icon, .cert-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1.1rem;
+    }
+
+    .edu-icon { background: var(--blue-dim); }
+    .cert-icon { background: var(--amber-dim); }
+
+    .edu-info strong, .cert-info strong {
+      display: block;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 3px;
+    }
+
+    .edu-info span, .cert-info span {
+      font-size: 0.83rem;
+      color: var(--muted);
+    }
+
+    .cert-link {
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      transition: all var(--transition);
+    }
+
+    .cert-link:hover .cert-info strong { color: var(--teal); }
+    .cert-link:hover { transform: translateX(3px); }
+
+    /* ─── Courses / Coming Soon ─── */
+    .courses-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       gap: 12px;
     }
 
-    .stat {
-      border: 1px solid var(--line-soft);
+    .course-card {
       background: var(--surface-2);
-      border-radius: 18px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+      transition: all var(--transition);
+    }
+
+    .course-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, var(--teal-dim), transparent);
+      opacity: 0;
+      transition: opacity var(--transition);
+    }
+
+    .course-card:hover { border-color: var(--border-hover); transform: translateY(-3px); box-shadow: 0 12px 36px rgba(0,0,0,0.35); }
+    .course-card:hover::after { opacity: 1; }
+
+    .course-emoji {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      display: block;
+      position: relative;
+      z-index: 1;
+    }
+
+    .course-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 6px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .course-desc {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-bottom: 12px;
+      line-height: 1.5;
+      position: relative;
+      z-index: 1;
+    }
+
+    .coming-soon-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: var(--amber-dim);
+      color: var(--amber);
+      border: 1px solid rgba(251,191,36,0.2);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 1;
+    }
+
+    .coming-soon-badge .soon-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--amber);
+      animation: pulse 2s infinite;
+    }
+
+    /* ─── Role fit / open to work ─── */
+    .role-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .role-item {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
       padding: 16px;
     }
 
-    .stat strong {
-      display: block;
-      font-size: 1.4rem;
-      line-height: 1.1;
+    .role-item-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--muted);
       margin-bottom: 6px;
     }
 
-    .stat span {
-      display: block;
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-
-    .sections {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      gap: var(--space-3);
-    }
-
-    .md-card {
-      grid-column: span 12;
-      padding: 28px;
-    }
-
-    .md-card h2 {
-      margin: 0 0 16px;
-      font-size: clamp(1.35rem, 2vw, 1.65rem);
-      line-height: 1.2;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      letter-spacing: -0.02em;
-    }
-
-    .md-card p {
-      margin: 0 0 12px;
-      color: var(--muted);
-      font-size: 1rem;
-    }
-
-    .md-card p strong {
-      color: var(--text);
-    }
-
-    .what-i-bring-card { grid-column: span 12; }
-    .expertise-card { grid-column: span 7; }
-    .role-fit-card { grid-column: span 5; }
-    .about-card { grid-column: span 8; }
-    .education-card { grid-column: span 4; }
-    .certs-card { grid-column: span 6; }
-    .links-card { grid-column: span 6; }
-
-    .feature-list {
-      display: grid;
-      gap: 14px;
-    }
-
-    .feature-item {
-      padding: 18px;
-      border-radius: 18px;
-      border: 1px solid var(--line-soft);
-      background: var(--surface-2);
-    }
-
-    .feature-item strong {
-      display: block;
-      margin-bottom: 6px;
-      font-size: 1rem;
-    }
-
-    .feature-item p {
-      margin: 0;
-      font-size: 0.95rem;
-    }
-
-    .expertise-group {
-      padding: 16px 0;
-      border-top: 1px solid var(--line-soft);
-    }
-
-    .expertise-group:first-of-type {
-      border-top: 0;
-      padding-top: 0;
-    }
-
-    .expertise-group h3 {
-      margin: 0 0 8px;
-      font-size: 1rem;
-      letter-spacing: -0.01em;
-    }
-
-    .about-copy {
-      max-width: 900px;
-    }
-
-    .link-list {
-      display: grid;
-      gap: 12px;
-    }
-
-    .md-link {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      padding: 14px 16px;
-      border-radius: 16px;
-      text-decoration: none;
-      border: 1px solid var(--line-soft);
-      background: var(--surface-2);
-      color: var(--text);
+    .role-item-value {
+      font-size: 0.88rem;
       font-weight: 600;
+      color: var(--text);
+      line-height: 1.4;
     }
 
-    .md-link small {
-      display: block;
-      margin-top: 2px;
-      color: var(--muted);
-      font-weight: 500;
-    }
-
+    /* ─── Footer ─── */
     .footer {
-      margin-top: var(--space-5);
-      padding-top: 22px;
-      border-top: 1px solid var(--line-soft);
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 16px;
-      color: var(--muted);
-      font-size: 0.94rem;
+      text-align: center;
+      padding-top: 40px;
+      color: var(--muted-2);
+      font-size: 0.82rem;
     }
 
-    .footer-actions {
-      display: flex;
-      gap: 10px;
-      align-items: center;
-      flex-wrap: wrap;
+    .footer a { color: var(--muted); text-decoration: none; transition: color var(--transition); }
+    .footer a:hover { color: var(--teal); }
+
+    /* ─── Light mode ─── */
+    body.light {
+      --bg: #f5f6fb;
+      --surface: #ffffff;
+      --surface-2: #f0f2f8;
+      --surface-3: #e8ebf5;
+      --border: rgba(0,0,0,0.08);
+      --border-hover: rgba(0,0,0,0.16);
+      --text: #0f1320;
+      --muted: #5c6080;
+      --muted-2: #9099b5;
+      --teal: #008a7c;
+      --teal-dim: rgba(0,138,124,0.08);
+      --teal-glow: rgba(0,138,124,0.2);
+      --blue: #2563eb;
+      --blue-dim: rgba(37,99,235,0.08);
+      --purple: #7c3aed;
+      --purple-dim: rgba(124,58,237,0.08);
+      --amber: #b45309;
+      --amber-dim: rgba(180,83,9,0.08);
+      --green: #059669;
+      --green-dim: rgba(5,150,105,0.08);
     }
 
-    .state-layer {
-      position: absolute;
-      inset: 0;
-      background: currentColor;
-      opacity: 0;
-      transition: opacity var(--transition);
-      pointer-events: none;
+    body.light::before {
+      background:
+        radial-gradient(ellipse 80% 60% at 20% -10%, rgba(0,138,124,0.05) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 50% at 80% 110%, rgba(37,99,235,0.05) 0%, transparent 60%);
     }
 
-    .md-btn:hover .state-layer,
-    .md-icon-btn:hover .state-layer,
-    .md-chip:hover .state-layer,
-    .md-link:hover .state-layer {
-      opacity: 0.05;
-    }
+    body.light .status-dot { border-color: var(--bg); }
+    body.light .avatar { box-shadow: 0 0 0 4px rgba(0,138,124,0.1), 0 4px 20px rgba(0,138,124,0.1); }
 
-    .md-btn:focus-visible,
-    .md-icon-btn:focus-visible,
-    .md-link:focus-visible {
-      outline: 2px solid var(--accent);
-      outline-offset: 2px;
-    }
-
-    @media (max-width: 1040px) {
-      .hero {
-        grid-template-columns: 1fr;
-      }
-
-      .expertise-card,
-      .role-fit-card,
-      .about-card,
-      .education-card,
-      .certs-card,
-      .links-card {
-        grid-column: span 12;
-      }
-    }
-
-    @media (max-width: 760px) {
-      .app-bar-inner,
-      main {
-        padding-left: 16px;
-        padding-right: 16px;
-      }
-
-      .hero-card,
-      .md-card,
-      .profile-panel,
-      .stats-panel {
-        padding: 20px;
-      }
-
-      .hero h1 {
-        font-size: clamp(2rem, 8vw, 3rem);
-      }
-
-      .stats-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .app-title-meta span {
-        display: none;
-      }
-    }
-
+    /* ─── Responsive ─── */
     @media (max-width: 520px) {
-      .stats-grid {
-        grid-template-columns: 1fr;
-      }
+      .page { padding: 32px 16px 60px; }
+      .role-grid { grid-template-columns: 1fr; }
+      .stat-pill { min-width: 80px; padding: 12px 14px; }
+      .stat-pill strong { font-size: 1.1rem; }
+      .courses-grid { grid-template-columns: 1fr 1fr; }
+    }
 
-      .app-actions {
-        gap: 8px;
-      }
-
-      .md-btn {
-        width: 100%;
-        justify-content: center;
-      }
-
-      .action-row {
-        align-items: stretch;
-      }
+    @media (max-width: 380px) {
+      .courses-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="page">
 
-  <header class="top-app-bar" role="banner" aria-label="Top app bar">
-    <div class="app-bar-inner">
-      <div class="app-title" aria-label="Site title">
-        <div class="avatar-dot" aria-hidden="true">DM</div>
-        <div class="app-title-meta">
-          <strong>Denny Mathew</strong>
-          <span>Senior Java Backend Engineer</span>
+    <!-- Top bar -->
+    <div class="topbar">
+      <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">☀️ Light</button>
+    </div>
+
+    <!-- Profile Header -->
+    <header class="profile-header">
+      <div class="avatar-wrap">
+        <div class="avatar" id="avatar">
+          <img src="/profile_pic.jpeg" alt="Denny Mathew" id="profileImg" />
+          <span class="initials">DM</span>
         </div>
+        <div class="status-dot" title="Open to opportunities"></div>
       </div>
 
-      <div class="app-actions" aria-label="Header actions">
-        <a class="md-icon-btn" href="https://github.com/dennym55" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile">
-          <span class="material-symbols-outlined" aria-hidden="true">code</span>
-          <span class="state-layer"></span>
-        </a>
-        <a class="md-icon-btn" href="https://www.linkedin.com/in/dennym-space/" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile">
-          <span class="material-symbols-outlined" aria-hidden="true">work</span>
-          <span class="state-layer"></span>
-        </a>
-        <a class="md-icon-btn" href="https://www.scaler.com/academy/profile/e78bd859848b/" target="_blank" rel="noopener noreferrer" aria-label="Open Scaler profile">
-          <span class="material-symbols-outlined" aria-hidden="true">school</span>
-          <span class="state-layer"></span>
-        </a>
-        <a class="md-icon-btn" href="https://www.youtube.com/@denny-mathew" target="_blank" rel="noopener noreferrer" aria-label="Open YouTube channel">
-          <span class="material-symbols-outlined" aria-hidden="true">smart_display</span>
-          <span class="state-layer"></span>
-        </a>
-        <button id="themeToggle" class="md-icon-btn" type="button" aria-label="Toggle light and dark theme" aria-pressed="false">
-          <span id="themeIcon" class="material-symbols-outlined" aria-hidden="true">dark_mode</span>
-          <span class="state-layer"></span>
-        </button>
+      <h1 class="profile-name">Denny Mathew</h1>
+      <p class="profile-role">Senior Java Backend Engineer · 12+ Years</p>
+
+      <div class="profile-badge">
+        <span class="dot"></span>
+        Open to Remote &amp; Europe Roles
+      </div>
+    </header>
+
+    <!-- Quick stats -->
+    <div class="stats-row">
+      <div class="stat-pill">
+        <strong>12+</strong>
+        <span>Years Exp.</span>
+      </div>
+      <div class="stat-pill">
+        <strong>Java</strong>
+        <span>Core Stack</span>
+      </div>
+      <div class="stat-pill">
+        <strong>M.Sc.</strong>
+        <span>Computer Science</span>
+      </div>
+      <div class="stat-pill">
+        <strong>BFSI</strong>
+        <span>+ Healthcare</span>
       </div>
     </div>
-  </header>
 
-  <main id="main-content" role="main">
-    <section class="hero" aria-labelledby="hero-title">
-      <article class="hero-card">
-        <div class="eyebrow">
-          <span class="material-symbols-outlined" aria-hidden="true">bolt</span>
-          Open to Remote & Europe Opportunities
-        </div>
+    <!-- Primary Links (link-in-bio style) -->
+    <section class="links-section" aria-label="Professional links">
 
-        <h1 id="hero-title">
-          Denny Mathew
-          <span>Senior Java Backend Engineer</span>
-        </h1>
-
-        <p class="hero-subtitle">
-          I build scalable backend systems, modern APIs, and cloud-native services with a strong focus on Java, Spring Boot, microservices, distributed systems, and enterprise modernization.
-        </p>
-
-        <p class="hero-tags">
-          Java • Spring Boot • REST APIs • Microservices • Distributed Systems • SQL • CI/CD • Docker • Kubernetes • Azure
-        </p>
-
-        <p class="hero-note">
-          Best aligned with Senior Java Backend, Backend Platform, API Modernization, and Integration Engineering roles across remote and Europe-based teams.
-        </p>
-
-        <div class="action-row" aria-label="Primary profile links">
-          <a class="md-btn secondary" href="https://www.linkedin.com/in/dennym-space/" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile">
-            <span class="material-symbols-outlined" aria-hidden="true">work</span>
-            LinkedIn
-            <span class="state-layer"></span>
-          </a>
-
-          <a class="md-btn secondary" href="https://github.com/dennym55" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile">
-            <span class="material-symbols-outlined" aria-hidden="true">code</span>
-            GitHub
-            <span class="state-layer"></span>
-          </a>
-
-          <a class="md-btn tonal" href="mailto:dennymathew.dev@gmail.com" aria-label="Send email">
-            <span class="material-symbols-outlined" aria-hidden="true">mail</span>
-            Email
-            <span class="state-layer"></span>
-          </a>
-        </div>
-      </article>
-
-      <div class="hero-side">
-        <aside class="panel profile-panel" aria-label="Profile summary">
-          <a
-            id="profileAvatar"
-            class="profile-avatar"
-            href="https://www.linkedin.com/in/dennym-space/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Open LinkedIn profile of Denny Mathew"
-            title="Open LinkedIn profile"
-          >
-            <img
-              id="profileImage"
-              src="/profile_pic.jpeg"
-              alt="Portrait of Denny Mathew"
-              decoding="async"
-            />
-            <span class="initials" aria-hidden="true">DM</span>
-          </a>
-
-          <h2>Denny Mathew</h2>
-          <p>Senior Java Backend Engineer focused on scalable APIs, modern backend systems, and enterprise modernization.</p>
-
-          <div class="status-badges">
-            <span class="badge">
-              <span class="material-symbols-outlined" aria-hidden="true">public</span>
-              Remote Ready
-            </span>
-            <span class="badge">
-              <span class="material-symbols-outlined" aria-hidden="true">schedule</span>
-              CET Overlap
-            </span>
-            <span class="badge">
-              <span class="material-symbols-outlined" aria-hidden="true">apartment</span>
-              Enterprise Domains
-            </span>
+      <a class="link-btn linkedin" href="https://www.linkedin.com/in/dennym-space/" target="_blank" rel="noopener noreferrer">
+        <div class="link-btn-left">
+          <div class="link-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="#0a66c2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="2" y="9" width="4" height="12" stroke="#0a66c2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="4" cy="4" r="2" stroke="#0a66c2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </div>
-        </aside>
-
-        <aside class="panel stats-panel" aria-label="Quick stats">
-          <div class="stats-grid">
-            <div class="stat">
-              <strong>12+ yrs</strong>
-              <span>Software engineering experience</span>
-            </div>
-            <div class="stat">
-              <strong>Java</strong>
-              <span>Backend & integration focus</span>
-            </div>
-            <div class="stat">
-              <strong>BFSI + Health</strong>
-              <span>Insurance, banking, healthcare domains</span>
-            </div>
-            <div class="stat">
-              <strong>M.Sc. CS</strong>
-              <span>Scaler / Woolf University</span>
-            </div>
+          <div class="link-btn-text">
+            <span class="link-btn-label">LinkedIn</span>
+            <span class="link-btn-sub">Connect &amp; reach out · dennym-space</span>
           </div>
-        </aside>
-      </div>
+        </div>
+        <span class="link-arrow">→</span>
+      </a>
+
+      <a class="link-btn github" href="https://github.com/dennym55" target="_blank" rel="noopener noreferrer">
+        <div class="link-btn-left">
+          <div class="link-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke="#e0e0ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="link-btn-text">
+            <span class="link-btn-label">GitHub</span>
+            <span class="link-btn-sub">Code, projects &amp; experiments · dennym55</span>
+          </div>
+        </div>
+        <span class="link-arrow">→</span>
+      </a>
+
+      <a class="link-btn scaler" href="https://www.scaler.com/academy/profile/e78bd859848b/" target="_blank" rel="noopener noreferrer">
+        <div class="link-btn-left">
+          <div class="link-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="#4f8fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 17l10 5 10-5" stroke="#4f8fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 12l10 5 10-5" stroke="#4f8fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="link-btn-text">
+            <span class="link-btn-label">Scaler Profile</span>
+            <span class="link-btn-sub">M.Sc. CS · Woolf University via Scaler</span>
+          </div>
+        </div>
+        <span class="link-arrow">→</span>
+      </a>
+
+      <a class="link-btn youtube" href="https://www.youtube.com/@denny-mathew" target="_blank" rel="noopener noreferrer">
+        <div class="link-btn-left">
+          <div class="link-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" stroke="#ff4444" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" stroke="#ff4444" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="link-btn-text">
+            <span class="link-btn-label">YouTube</span>
+            <span class="link-btn-sub">Technical content · @denny-mathew</span>
+          </div>
+        </div>
+        <span class="link-arrow">→</span>
+      </a>
+
     </section>
 
-    <section class="sections" aria-label="Profile sections">
-      <article class="md-card what-i-bring-card" aria-labelledby="bring-title">
-        <h2 id="bring-title">
-          <span class="material-symbols-outlined" aria-hidden="true">star</span>
-          What I Bring
-        </h2>
-
-        <div class="feature-list">
-          <div class="feature-item">
-            <strong>Backend Engineering</strong>
-            <p>I design and develop Java backend services with a focus on maintainability, clarity, and reliable delivery in enterprise environments.</p>
-          </div>
-
-          <div class="feature-item">
-            <strong>API Modernization</strong>
-            <p>Strong alignment with REST API development, integration engineering, XML/JSON workflows, and modernization of legacy SOAP-based systems.</p>
-          </div>
-
-          <div class="feature-item">
-            <strong>Distributed Systems Thinking</strong>
-            <p>Comfortable with system design concepts, scalability, consistency, caching, orchestration, and architecture trade-offs for modern backend systems.</p>
-          </div>
-
-          <div class="feature-item">
-            <strong>Cloud & Delivery Mindset</strong>
-            <p>Experience and strong working knowledge across CI/CD, Azure DevOps, Docker, Kubernetes, Linux environments, production support, and release workflows.</p>
-          </div>
-        </div>
-      </article>
-
-      <article class="md-card expertise-card" aria-labelledby="expertise-title">
-        <h2 id="expertise-title">
-          <span class="material-symbols-outlined" aria-hidden="true">code_blocks</span>
-          Core Expertise
-        </h2>
-
-        <div class="expertise-group">
-          <h3>Backend</h3>
-          <p>Java, Spring Boot, REST APIs, Backend Development, Microservices, API Design, Integration Engineering</p>
-        </div>
-
-        <div class="expertise-group">
-          <h3>Architecture</h3>
-          <p>Distributed Systems, System Design, HLD, LLD, Scalable Backend Architecture, Service Design</p>
-        </div>
-
-        <div class="expertise-group">
-          <h3>Data & Integration</h3>
-          <p>SQL, Redis, XML/JSON Processing, SOAP, SOAP to REST Migration, API-Centric Workflows</p>
-        </div>
-
-        <div class="expertise-group">
-          <h3>Cloud & DevOps</h3>
-          <p>Azure, Docker, Kubernetes, CI/CD, Azure DevOps, Linux, Deployment Support</p>
-        </div>
-
-        <div class="expertise-group">
-          <h3>Engineering Practices</h3>
-          <p>Agile, Scrum, Scrum Ceremonies, Production Support, Release Management, Cross-Functional Collaboration, Mentoring</p>
-        </div>
-      </article>
-
-      <article class="md-card role-fit-card" aria-labelledby="fit-title">
-        <h2 id="fit-title">
-          <span class="material-symbols-outlined" aria-hidden="true">workspaces</span>
-          Role Fit
-        </h2>
-
-        <p><strong>Target Roles:</strong><br />Senior Java Backend Engineer, Backend Platform Engineer, API Modernization Engineer, Integration Engineer</p>
-        <p><strong>Domain Experience:</strong><br />Insurance, Banking, Healthcare, Enterprise Software</p>
-        <p><strong>Work Preference:</strong><br />Remote, Europe-based opportunities, contract or full-time roles</p>
-        <p><strong>Strengths:</strong><br />Backend systems, API modernization, system design thinking, enterprise integration, delivery collaboration</p>
-      </article>
-
-      <article class="md-card about-card" aria-labelledby="about-title">
-        <h2 id="about-title">
-          <span class="material-symbols-outlined" aria-hidden="true">info</span>
-          About
-        </h2>
-
-        <div class="about-copy">
-          <p>I am a Senior Java Backend Engineer with 12+ years of software development experience across backend engineering, API integration, enterprise application development, and legacy modernization.</p>
-
-          <p>My core focus is building backend systems using Java, Spring Boot, REST APIs, microservices, SQL, and distributed systems. I have worked across insurance, banking, healthcare, and enterprise environments, contributing to backend service development, SOAP-to-REST modernization, XML-to-JSON transformation, integration workflows, production support, and release coordination.</p>
-
-          <p>I am comfortable working across the software delivery lifecycle — from requirement analysis and system design discussions to implementation, debugging, deployment support, and collaboration with cross-functional teams.</p>
-
-          <p>My M.Sc. in Computer Science strengthened my understanding of system design, distributed systems, database internals, caching, authentication, cloud-native architecture, containerization, orchestration, and large-scale backend engineering principles.</p>
-
-          <p>I am currently open to Senior Java Backend, Backend Platform, API Modernization, and Integration Engineering roles across remote and Europe-based teams.</p>
-        </div>
-      </article>
-
-      <article class="md-card education-card" aria-labelledby="education-title">
-        <h2 id="education-title">
-          <span class="material-symbols-outlined" aria-hidden="true">school</span>
-          Education
-        </h2>
-
-        <p><strong>M.Sc. Computer Science</strong><br />Scaler (Woolf University)</p>
-        <p><strong>B.Tech Computer Science</strong><br />CUSAT</p>
-      </article>
-
-      <article class="md-card certs-card" aria-labelledby="cert-title">
-        <h2 id="cert-title">
-          <span class="material-symbols-outlined" aria-hidden="true">workspace_premium</span>
-          Certifications
-        </h2>
-
-        <div class="link-list">
-          <a class="md-link" href="https://credsverse.com/credentials/6e9f85ea-493f-46c1-9852-08c9bf0134ec" target="_blank" rel="noopener noreferrer">
-            <span>
-              AI Engineering Specialization - ByteByteGo
-              <small>Modern AI systems and large-scale architecture learning</small>
-            </span>
-            <span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>
-          </a>
-
-          <a class="md-link" href="https://learn.microsoft.com/en-us/users/dennymathew-6625/credentials/e9b5fb0770641186" target="_blank" rel="noopener noreferrer">
-            <span>
-              Microsoft Certified: Azure AI Fundamentals
-              <small>Cloud and AI fundamentals on Azure</small>
-            </span>
-            <span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>
-          </a>
-
-          <a class="md-link" href="https://learn.microsoft.com/en-us/users/dennymathew-6625/credentials/f63d8f0a7fc8a568" target="_blank" rel="noopener noreferrer">
-            <span>
-              Microsoft Certified: Azure Fundamentals
-              <small>Cloud platform fundamentals</small>
-            </span>
-            <span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>
-          </a>
-
-          <a class="md-link" href="https://d1bm918zlnq37v.cloudfront.net/CECTemp/Certificates/CA-11-2025-26/91.jpg" target="_blank" rel="noopener noreferrer">
-            <span>
-              Advanced AI Engineering - IIT Roorkee (with Scaler)
-              <small>Structured advanced learning in AI engineering</small>
-            </span>
-            <span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>
-          </a>
-        </div>
-      </article>
-
-      <article class="md-card links-card" aria-labelledby="links-title">
-        <h2 id="links-title">
-          <span class="material-symbols-outlined" aria-hidden="true">link</span>
-          Professional Links
-        </h2>
-
-        <div class="link-list">
-          <a class="md-link" href="https://www.linkedin.com/in/dennym-space/" target="_blank" rel="noopener noreferrer">
-            <span>
-              LinkedIn
-              <small>Professional profile and job-facing presence</small>
-            </span>
-            <span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>
-          </a>
-
-          <a class="md-link" href="https://github.com/dennym55" target="_blank" rel="noopener noreferrer">
-            <span>
-              GitHub
-              <small>Code, projects, and technical exploration</small>
-            </span>
-            <span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>
-          </a>
-
-          <a class="md-link" href="https://www.scaler.com/academy/profile/e78bd859848b/" target="_blank" rel="noopener noreferrer">
-            <span>
-              Scaler Profile
-              <small>M.Sc. CS and structured technical learning</small>
-            </span>
-            <span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>
-          </a>
-
-          <a class="md-link" href="https://www.youtube.com/@denny-mathew" target="_blank" rel="noopener noreferrer">
-            <span>
-              YouTube
-              <small>Technical or personal public-facing content</small>
-            </span>
-            <span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>
-          </a>
-
-          <a class="md-link" href="mailto:dennymathew.dev@gmail.com">
-            <span>
-              Email
-              <small>dennymathew.dev@gmail.com</small>
-            </span>
-            <span class="material-symbols-outlined" aria-hidden="true">mail</span>
-          </a>
-        </div>
-      </article>
-    </section>
-
-    <footer class="footer" role="contentinfo">
-      <div>© 2026 Denny Mathew • Senior Java Backend Engineer • Open to Remote & Europe Roles</div>
-
-      <div class="footer-actions" aria-label="Footer actions">
-        <a class="md-icon-btn" href="https://github.com/dennym55" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile from footer">
-          <span class="material-symbols-outlined" aria-hidden="true">code</span>
-          <span class="state-layer"></span>
-        </a>
-        <a class="md-icon-btn" href="https://www.linkedin.com/in/dennym-space/" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile from footer">
-          <span class="material-symbols-outlined" aria-hidden="true">work</span>
-          <span class="state-layer"></span>
-        </a>
-        <a class="md-icon-btn" href="mailto:dennymathew.dev@gmail.com" aria-label="Send email from footer">
-          <span class="material-symbols-outlined" aria-hidden="true">mail</span>
-          <span class="state-layer"></span>
-        </a>
+    <!-- About Me -->
+    <div class="card" id="about">
+      <div class="section-label"><span class="section-label-dot"></span> About Me</div>
+      <div class="about-text">
+        <p>I'm a <strong>Senior Java Backend Engineer</strong> with <strong>12+ years</strong> of experience building scalable backend systems, REST APIs, and microservices across enterprise domains including <strong>insurance, banking, and healthcare</strong>.</p>
+        <p>My core focus is backend development with <strong>Java, Spring Boot, REST APIs, microservices, SQL, and distributed systems</strong>. I've contributed to SOAP-to-REST modernization, XML-to-JSON transformation, integration workflows, production support, and release coordination.</p>
+        <p>I work across the full software delivery lifecycle — from system design and requirement analysis to implementation, debugging, and deployment. My <strong>M.Sc. in Computer Science</strong> (Scaler × Woolf University) deepened my knowledge in distributed systems, database internals, caching, cloud-native architecture, containerization, and large-scale backend engineering.</p>
+        <p>Currently open to <strong>Senior Java Backend, Backend Platform, API Modernization, and Integration Engineering</strong> roles — remote or Europe-based.</p>
       </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="card skills-section">
+      <div class="section-label"><span class="section-label-dot"></span> Skills &amp; Expertise</div>
+
+      <div class="skill-group">
+        <div class="skill-group-title">Backend Engineering</div>
+        <div class="skill-tags">
+          <span class="skill-tag teal">Java</span>
+          <span class="skill-tag teal">Spring Boot</span>
+          <span class="skill-tag teal">REST APIs</span>
+          <span class="skill-tag teal">Microservices</span>
+          <span class="skill-tag teal">API Design</span>
+          <span class="skill-tag teal">Integration Engineering</span>
+          <span class="skill-tag teal">Backend Development</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-title">Architecture &amp; System Design</div>
+        <div class="skill-tags">
+          <span class="skill-tag blue">Distributed Systems</span>
+          <span class="skill-tag blue">System Design</span>
+          <span class="skill-tag blue">HLD</span>
+          <span class="skill-tag blue">LLD</span>
+          <span class="skill-tag blue">Scalable Architecture</span>
+          <span class="skill-tag blue">Service Design</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-title">Data &amp; Integration</div>
+        <div class="skill-tags">
+          <span class="skill-tag purple">SQL</span>
+          <span class="skill-tag purple">Redis</span>
+          <span class="skill-tag purple">XML / JSON</span>
+          <span class="skill-tag purple">SOAP</span>
+          <span class="skill-tag purple">SOAP-to-REST Migration</span>
+          <span class="skill-tag purple">API Workflows</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-title">Cloud &amp; DevOps</div>
+        <div class="skill-tags">
+          <span class="skill-tag amber">Azure</span>
+          <span class="skill-tag amber">Docker</span>
+          <span class="skill-tag amber">Kubernetes</span>
+          <span class="skill-tag amber">CI/CD</span>
+          <span class="skill-tag amber">Azure DevOps</span>
+          <span class="skill-tag amber">Linux</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-title">Engineering Practices</div>
+        <div class="skill-tags">
+          <span class="skill-tag green">Agile / Scrum</span>
+          <span class="skill-tag green">Production Support</span>
+          <span class="skill-tag green">Release Management</span>
+          <span class="skill-tag green">Mentoring</span>
+          <span class="skill-tag green">Cross-Team Collaboration</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Open to Work / Role Fit -->
+    <div class="card">
+      <div class="section-label"><span class="section-label-dot"></span> Open To Work</div>
+      <div class="role-grid">
+        <div class="role-item">
+          <div class="role-item-label">Target Roles</div>
+          <div class="role-item-value">Senior Java Backend · Backend Platform · API Modernization · Integration Engineer</div>
+        </div>
+        <div class="role-item">
+          <div class="role-item-label">Domains</div>
+          <div class="role-item-value">Insurance · Banking · Healthcare · Enterprise Software</div>
+        </div>
+        <div class="role-item">
+          <div class="role-item-label">Availability</div>
+          <div class="role-item-value">Remote · Europe · Contract or Full-time</div>
+        </div>
+        <div class="role-item">
+          <div class="role-item-label">Timezone</div>
+          <div class="role-item-value">IST · CET overlap available</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="card">
+      <div class="section-label"><span class="section-label-dot"></span> Education</div>
+
+      <div class="edu-item">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-info">
+          <strong>M.Sc. Computer Science</strong>
+          <span>Scaler (Woolf University) · Distributed Systems, System Design, Cloud Architecture</span>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-icon">🏛️</div>
+        <div class="edu-info">
+          <strong>B.Tech Computer Science</strong>
+          <span>CUSAT · Cochin University of Science and Technology</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certifications -->
+    <div class="card">
+      <div class="section-label"><span class="section-label-dot"></span> Certifications</div>
+
+      <a class="cert-item cert-link" href="https://credsverse.com/credentials/6e9f85ea-493f-46c1-9852-08c9bf0134ec" target="_blank" rel="noopener noreferrer">
+        <div class="cert-icon">🏅</div>
+        <div class="cert-info">
+          <strong>AI Engineering Specialization — ByteByteGo</strong>
+          <span>Modern AI systems &amp; large-scale architecture</span>
+        </div>
+      </a>
+
+      <a class="cert-item cert-link" href="https://learn.microsoft.com/en-us/users/dennymathew-6625/credentials/e9b5fb0770641186" target="_blank" rel="noopener noreferrer">
+        <div class="cert-icon">☁️</div>
+        <div class="cert-info">
+          <strong>Microsoft Certified: Azure AI Fundamentals</strong>
+          <span>Microsoft · Cloud &amp; AI fundamentals on Azure</span>
+        </div>
+      </a>
+
+      <a class="cert-item cert-link" href="https://learn.microsoft.com/en-us/users/dennymathew-6625/credentials/f63d8f0a7fc8a568" target="_blank" rel="noopener noreferrer">
+        <div class="cert-icon">🔵</div>
+        <div class="cert-info">
+          <strong>Microsoft Certified: Azure Fundamentals</strong>
+          <span>Microsoft · Cloud platform fundamentals</span>
+        </div>
+      </a>
+
+      <a class="cert-item cert-link" href="https://d1bm918zlnq37v.cloudfront.net/CECTemp/Certificates/CA-11-2025-26/91.jpg" target="_blank" rel="noopener noreferrer">
+        <div class="cert-icon">🎖️</div>
+        <div class="cert-info">
+          <strong>Advanced AI Engineering — IIT Roorkee × Scaler</strong>
+          <span>Structured advanced AI engineering programme</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Courses — Coming Soon -->
+    <div class="card">
+      <div class="section-label"><span class="section-label-dot"></span> Courses &amp; Learning Resources</div>
+      <p style="font-size:0.88rem;color:var(--muted);margin-bottom:20px;line-height:1.6;">I'm working on structured learning content based on real engineering experience. These courses are coming soon — stay tuned via <a href="https://www.linkedin.com/in/dennym-space/" target="_blank" rel="noopener noreferrer" style="color:var(--teal);text-decoration:none;font-weight:600;">LinkedIn</a> and <a href="https://www.youtube.com/@denny-mathew" target="_blank" rel="noopener noreferrer" style="color:var(--teal);text-decoration:none;font-weight:600;">YouTube</a>.</p>
+
+      <div class="courses-grid">
+
+        <div class="course-card">
+          <span class="course-emoji">🗄️</span>
+          <div class="course-title">SQL Mastery</div>
+          <div class="course-desc">From fundamentals to advanced query optimization, indexing, and database internals.</div>
+          <span class="coming-soon-badge"><span class="soon-dot"></span> Coming Soon</span>
+        </div>
+
+        <div class="course-card">
+          <span class="course-emoji">🏗️</span>
+          <div class="course-title">High-Level Design (HLD)</div>
+          <div class="course-desc">Scalable system architecture, distributed systems patterns, and real-world design interviews.</div>
+          <span class="coming-soon-badge"><span class="soon-dot"></span> Coming Soon</span>
+        </div>
+
+        <div class="course-card">
+          <span class="course-emoji">🔩</span>
+          <div class="course-title">Low-Level Design (LLD)</div>
+          <div class="course-desc">Object-oriented design, design patterns, SOLID principles, and coding clean systems.</div>
+          <span class="coming-soon-badge"><span class="soon-dot"></span> Coming Soon</span>
+        </div>
+
+        <div class="course-card">
+          <span class="course-emoji">☕</span>
+          <div class="course-title">Java Backend Engineering</div>
+          <div class="course-desc">Core Java, Spring Boot, REST API design, microservices, and backend best practices.</div>
+          <span class="coming-soon-badge"><span class="soon-dot"></span> Coming Soon</span>
+        </div>
+
+        <div class="course-card">
+          <span class="course-emoji">☁️</span>
+          <div class="course-title">Cloud &amp; DevOps</div>
+          <div class="course-desc">Azure, Docker, Kubernetes, CI/CD pipelines, and modern deployment practices.</div>
+          <span class="coming-soon-badge"><span class="soon-dot"></span> Coming Soon</span>
+        </div>
+
+        <div class="course-card">
+          <span class="course-emoji">⚡</span>
+          <div class="course-title">API Modernization</div>
+          <div class="course-desc">SOAP to REST migration, integration engineering, XML/JSON workflows.</div>
+          <span class="coming-soon-badge"><span class="soon-dot"></span> Coming Soon</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2026 Denny Mathew &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/dennym-space/" target="_blank" rel="noopener noreferrer">LinkedIn</a> &nbsp;·&nbsp; <a href="https://github.com/dennym55" target="_blank" rel="noopener noreferrer">GitHub</a></p>
     </footer>
-  </main>
+
+  </div><!-- .page -->
 
   <script>
-    (function () {
+    // Theme toggle
+    (function() {
+      const btn = document.getElementById('themeToggle');
       const body = document.body;
-      const themeToggle = document.getElementById("themeToggle");
-      const themeIcon = document.getElementById("themeIcon");
-      const avatar = document.getElementById("profileAvatar");
-      const profileImage = document.getElementById("profileImage");
 
-      function applyTheme(theme) {
-        const isDark = theme === "dark";
-        body.classList.toggle("dark", isDark);
-        themeToggle.setAttribute("aria-pressed", String(isDark));
-        themeIcon.textContent = isDark ? "light_mode" : "dark_mode";
-        try {
-          localStorage.setItem("theme", theme);
-        } catch (err) {}
+      function setTheme(theme) {
+        if (theme === 'light') {
+          body.classList.add('light');
+          btn.textContent = '🌙 Dark';
+        } else {
+          body.classList.remove('light');
+          btn.textContent = '☀️ Light';
+        }
+        try { localStorage.setItem('theme', theme); } catch(e) {}
       }
 
-      function initialTheme() {
-        try {
-          const saved = localStorage.getItem("theme");
-          if (saved === "light" || saved === "dark") return saved;
-        } catch (err) {}
-        return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-      }
+      // Init
+      let saved = 'dark';
+      try { saved = localStorage.getItem('theme') || 'dark'; } catch(e) {}
+      if (!saved) saved = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      setTheme(saved);
 
-      applyTheme(initialTheme());
-
-      themeToggle.addEventListener("click", function () {
-        applyTheme(body.classList.contains("dark") ? "light" : "dark");
+      btn.addEventListener('click', function() {
+        setTheme(body.classList.contains('light') ? 'dark' : 'light');
       });
 
-      if (profileImage) {
-        profileImage.addEventListener("load", function () {
-          avatar.classList.add("has-image");
-        });
-        profileImage.addEventListener("error", function () {
-          avatar.classList.remove("has-image");
-        });
+      // Profile image
+      const img = document.getElementById('profileImg');
+      const avatar = document.getElementById('avatar');
+      if (img) {
+        img.addEventListener('load', function() { avatar.classList.add('loaded'); });
+        img.addEventListener('error', function() { avatar.classList.remove('loaded'); });
+        if (img.complete && img.naturalWidth > 0) avatar.classList.add('loaded');
       }
     })();
   </script>
