@@ -537,10 +537,12 @@
 
     @media (max-width: 780px) {
       :root { --nav-h: 68px; --radius: 20px; }
-      .shell { width: min(calc(100% - 32px), var(--max)); }
-      .section { padding: 94px 0; }
+      html, body { width: 100%; max-width: 100%; }
+      main { width: 100%; overflow: clip; }
+      .shell { width: auto; max-width: var(--max); margin-inline: 24px; }
+      .section { padding: 64px 0; }
       .brand-copy small { display: none; }
-      .hero { padding-top: calc(var(--nav-h) + 45px); }
+      .hero { min-height: auto; padding: calc(var(--nav-h) + 45px) 0 64px; }
       .hero-grid { display: flex; flex-direction: column; align-items: stretch; }
       .hero h1 { font-size: clamp(4.2rem, 20vw, 7rem); }
       .hero-jp { display: none; }
@@ -552,29 +554,35 @@
       .player-card { inset: 0 8px 25px; }
       .manga-word { left: 0; }
       .quest-toast { right: 0; bottom: 0; }
-      .section-head { display: block; }
+      .section-head { display: block; margin-bottom: 40px; }
       .chapter { display: block; margin-bottom: 18px; }
-      .section-title { font-size: clamp(2.75rem, 13vw, 5rem); }
+      .section-title { max-width: 100%; font-size: clamp(2.55rem, 10.5vw, 4rem); line-height: .94; text-wrap: wrap; }
+      .section-intro { margin-top: 18px; }
       .origin-grid { display: block; }
-      .origin-quote { position: relative; top: auto; margin-bottom: 55px; }
+      .origin-quote { position: relative; top: auto; margin-bottom: 44px; }
       .arc { gap: 18px; }
       .boss-grid { display: grid; grid-template-columns: 1fr; }
-      .boss-card, .boss-card:nth-child(n) { grid-column: auto; min-height: 370px; }
-      .boss-top { margin-bottom: 50px; }
+      .boss-card, .boss-card:nth-child(n) { display: flex; grid-column: auto; min-height: 0; flex-direction: column; }
+      .boss-top { margin-bottom: 34px; }
+      .boss-card > p { margin-bottom: 22px; }
+      .move { align-self: flex-start; max-width: 100%; white-space: normal; }
+      .boss-loot { position: static; margin-top: 28px; opacity: 1; text-align: left; }
+      .boss-loot small { text-align: left; }
       .loadout-grid { grid-template-columns: 1fr; }
       .console { min-height: 520px; }
       .project-grid { grid-template-columns: 1fr; }
       .project, .project:last-child { grid-column: auto; min-height: 390px; }
-      .lab-note { margin: -25px 0 40px; }
+      .lab-note { margin: -12px 0 40px; }
       .video { grid-template-columns: 145px 1fr; gap: 14px; }
       .play { display: none; }
       .rules-grid { grid-template-columns: 1fr; }
       .rule, .rule:nth-child(n) { min-height: 245px; border-right: 0; border-bottom: 1px solid var(--line); }
       .rule:last-child { border-bottom: 0; }
       .rule-no { margin-bottom: 40px; }
-      .final-zone { padding-top: 115px; }
-      .final-inner h2 { font-size: clamp(4rem, 18vw, 7rem); }
-      footer { flex-direction: column; align-items: flex-start; margin-top: 90px; }
+      .final-zone { padding: 80px 0 40px; }
+      .final-inner h2 { max-width: 100%; font-size: clamp(3.2rem, 13vw, 5rem); line-height: .86; text-wrap: wrap; }
+      .social-rail { margin-top: 48px; }
+      footer { flex-direction: column; align-items: flex-start; margin-top: 70px; }
     }
 
     @media (max-width: 500px) {
@@ -587,13 +595,14 @@
       .player-data h2 { font-size: 1.8rem; }
       .quest-toast { width: 200px; }
       .boss-card { padding: 23px; }
-      .boss-loot { right: 20px; font-size: 3rem; }
+      .boss-loot { font-size: 2.7rem; }
+      .console, .inventory { padding: 22px; }
       .gear { grid-template-columns: 46px 1fr; }
       .gear-icon { width: 46px; height: 46px; }
       .rarity { display: none; }
       .video { grid-template-columns: 1fr; }
       .video-copy { padding: 4px 5px 9px; }
-      .social-rail { gap: 17px; }
+      .social-rail { gap: 14px 17px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
