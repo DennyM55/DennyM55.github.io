@@ -70,6 +70,8 @@
       margin: 0;
       min-width: 320px;
       overflow-x: hidden;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
       background:
         radial-gradient(circle at 85% 5%, rgba(var(--cyan-rgb), .09), transparent 27rem),
         radial-gradient(circle at 7% 42%, rgba(var(--coral-rgb), .07), transparent 32rem),
@@ -587,8 +589,8 @@
 
     @media (max-width: 500px) {
       .hero-actions .btn, .contact-actions .btn { width: 100%; }
-      .hero h1 { width: 100%; max-width: 100%; font-size: clamp(3.2rem, 16vw, 4.5rem); }
-      .hero h1 span { -webkit-text-stroke-width: 1px; text-shadow: 4px 4px 0 rgba(var(--cyan-rgb), .23); }
+      .hero h1 { width: 100%; max-width: 100%; font-size: clamp(3rem, 14vw, 4.1rem); }
+      .hero h1 span { font-size: .72em; letter-spacing: -.1em; -webkit-text-stroke-width: 1px; text-shadow: 4px 4px 0 rgba(var(--cyan-rgb), .23); }
       .hero-line { font-size: 1.2rem; }
       .player-stage { min-height: 520px; }
       .player-data { inset: auto 22px 24px; }
@@ -602,6 +604,8 @@
       .rarity { display: none; }
       .video { grid-template-columns: 1fr; }
       .video-copy { padding: 4px 5px 9px; }
+      .final-inner h2 { font-size: clamp(2.85rem, 10.5vw, 4rem); letter-spacing: -.09em; }
+      .final-inner h2 span { display: block; font-size: .92em; }
       .social-rail { gap: 14px 17px; }
     }
 
