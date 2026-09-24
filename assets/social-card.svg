@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="top" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d7fab6"/><stop offset="1" stop-color="#81c687"/></linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#3b4d3c"/></pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#111513"/>
+  <rect x="810" width="390" height="630" fill="url(#grid)"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="64" y="83" fill="#f2f3e9" font-size="30" font-weight="700">dm<tspan fill="#d1f5ad">.</tspan></text>
+    <path d="M137 54v36" stroke="#465241"/>
+    <text x="159" y="79" fill="#f2f3e9" font-size="23">Denny Mathew</text>
+    <text x="64" y="157" fill="#a3aca1" font-size="13" letter-spacing="2">SENIOR SOFTWARE ENGINEER</text>
+    <text x="60" y="249" fill="#f2f3e9" font-size="75" letter-spacing="-4">Engineering</text>
+    <text x="60" y="332" fill="#f2f3e9" font-size="75" letter-spacing="-4">behind the</text>
+    <text x="60" y="415" fill="#d1f5ad" font-size="75" letter-spacing="-4">experience.</text>
+    <text x="64" y="468" fill="#b8c1b2" font-size="20">Java backend · Enterprise integration · AI applications</text>
+    <path d="M64 520h1072" stroke="#343d33"/>
+    <text x="64" y="568" fill="#d1f5ad" font-size="17">13+ years in software</text>
+    <text x="302" y="568" fill="#b8c1b2" font-size="17">Media · Banking · Healthcare</text>
+    <text x="1136" y="568" text-anchor="end" fill="#f2f3e9" font-size="17">dennymathew.me</text>
+  </g>
+  <g transform="translate(739 93)">
+    <path d="m18 303 181-104 181 104-181 105Z" fill="#19281f" stroke="#38553f" stroke-dasharray="4 7"/>
+    <path d="m48 256 151-87 151 87v28l-151 87-151-87Z" fill="#19281f" stroke="#66836c"/>
+    <path d="m48 256 151-87 151 87-151 87Z" fill="#2d4439" stroke="#66836c"/>
+    <path d="m71 178 128-74 128 74v25l-128 74-128-74Z" fill="#213b2b" stroke="#8eac8c"/>
+    <path d="m71 178 128-74 128 74-128 74Z" fill="#415f48" stroke="#8eac8c"/>
+    <path d="m94 98 105-61 105 61v24l-105 61-105-61Z" fill="#6caa73" stroke="#d7fab6"/>
+    <path d="m94 98 105-61 105 61-105 61Z" fill="url(#top)" stroke="#efffe3"/>
+    <path d="m145 99 54-31 54 31-54 31Z" fill="none" stroke="#376648"/>
+    <path d="m171 98 14-8m-14 8 14 8m29-16 14 8-14 8m-11-26-10 36" stroke="#214e34" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M94 139v42m210-42v42M71 219v38m256-38v38" stroke="#bfeaa4" stroke-dasharray="3 5"/>
+  </g>
+</svg>
