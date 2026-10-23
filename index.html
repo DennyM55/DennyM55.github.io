@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#111513">
   <meta name="color-scheme" content="dark">
   <title>Denny Mathew — Java Backend &amp; Software Engineer</title>
-  <meta name="description" content="Denny Mathew, Senior Software Engineer. Explore Java backend, enterprise integration, AI and media projects, 13+ years of software delivery, and Microsoft Azure certifications.">
+  <meta name="description" content="Denny Mathew, Senior Software Engineer. Explore Java backend, AI engineering, enterprise integration and media projects, including the live Dream11 Genie demo.">
   <link rel="canonical" href="https://dennymathew.me/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Denny Mathew — Engineering behind the experience">
@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Person","name":"Denny Mathew","url":"https://dennymathew.me/","jobTitle":"Senior Software Engineer","description":"Software engineer focused on Java backend development, enterprise API integration and AI applications.","sameAs":["https://www.linkedin.com/in/dennymathew119","https://github.com/DennyM55","https://www.youtube.com/@denny-mathew"],"knowsAbout":["Java","Spring Boot","REST APIs","Enterprise Integration","Android","Microsoft Azure"],"hasCredential":[{"@type":"EducationalOccupationalCredential","name":"Microsoft Certified: Azure Fundamentals","credentialCategory":"Certification"},{"@type":"EducationalOccupationalCredential","name":"Microsoft Certified: Azure AI Fundamentals","credentialCategory":"Certification"}]}
+  {"@context":"https://schema.org","@type":"Person","name":"Denny Mathew","url":"https://dennymathew.me/","jobTitle":"Senior Software Engineer","description":"Software engineer focused on Java backend development, enterprise API integration and AI engineering.","sameAs":["https://www.linkedin.com/in/dennymathew119","https://github.com/DennyM55","https://www.youtube.com/@denny-mathew"],"knowsAbout":["Java","Spring Boot","REST APIs","AI Engineering","Python","LangGraph","Retrieval-Augmented Generation","Enterprise Integration","Android","Microsoft Azure"],"hasCredential":[{"@type":"EducationalOccupationalCredential","name":"Microsoft Certified: Azure Fundamentals","credentialCategory":"Certification"},{"@type":"EducationalOccupationalCredential","name":"Microsoft Certified: Azure AI Fundamentals","credentialCategory":"Certification"}]}
   </script>
 </head>
 <body>
@@ -29,7 +29,7 @@
   <header class="site-header">
     <div class="shell nav-inner">
       <a class="brand" href="#home" aria-label="Denny Mathew — home"><span class="brand-mark" aria-hidden="true">dm<span>.</span></span><span>Denny Mathew<span class="brand-role">Software engineer</span></span></a>
-      <nav id="navigation" class="navigation" aria-label="Main navigation"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#expertise">Expertise</a><a href="#credentials">Certifications</a></nav>
+      <nav id="navigation" class="navigation" aria-label="Main navigation"><a href="#work">Work</a><a href="#project-dream11-genie" data-filter-link="ai">AI Projects</a><a href="#experience">Experience</a><a href="#expertise">Expertise</a><a href="#credentials">Certifications</a></nav>
       <div class="nav-actions"><a class="nav-connect" href="https://www.linkedin.com/in/dennymathew119" target="_blank" rel="noopener noreferrer">Let's connect <span aria-hidden="true">↗</span></a><button class="menu-button" type="button" aria-expanded="false" aria-controls="navigation" aria-label="Open navigation" hidden><span></span><span></span></button></div>
     </div>
   </header>
@@ -71,8 +71,30 @@
     </div></section>
     <section class="section shell" id="work" aria-labelledby="work-title">
       <div class="section-heading"><div><p class="eyebrow section-eyebrow">01 / SELECTED WORK</p><h2 id="work-title">Built to solve.<br><span class="muted">Designed to explain.</span></h2></div><p class="section-intro">A closer look at my independent projects and professional delivery: the problem, the implementation, and the decisions behind it.</p></div>
-      <div class="project-toolbar" hidden><div class="project-filters" role="group" aria-label="Filter projects"><button type="button" data-filter="featured" aria-pressed="true">Featured</button><button type="button" data-filter="all" aria-pressed="false">All work</button><button type="button" data-filter="backend" aria-pressed="false">Java &amp; backend</button><button type="button" data-filter="ai" aria-pressed="false">AI</button><button type="button" data-filter="media" aria-pressed="false">Media</button><button type="button" data-filter="enterprise" aria-pressed="false">Enterprise</button></div><p class="project-count" role="status" aria-live="polite" aria-atomic="true"></p></div>
+      <div class="project-toolbar" hidden><div class="project-filters" role="group" aria-label="Filter projects"><button type="button" data-filter="featured" aria-pressed="true">Featured</button><button type="button" data-filter="all" aria-pressed="false">All work</button><button type="button" data-filter="backend" aria-pressed="false">Java &amp; backend</button><button type="button" data-filter="ai" aria-pressed="false">AI Engineering</button><button type="button" data-filter="media" aria-pressed="false">Media</button><button type="button" data-filter="enterprise" aria-pressed="false">Enterprise</button></div><p class="project-count" role="status" aria-live="polite" aria-atomic="true"></p></div>
       <div class="project-grid" id="project-grid">
+<article class="project-card" data-project data-categories="ai web" data-featured="true" id="project-dream11-genie">
+  <div class="project-visual project-visual--genie" aria-hidden="true">
+    <span class="visual-kicker">Live AI engineering project</span>
+    <strong class="visual-title">A fantasy XI.<br>Generated, then validated.</strong>
+    <div class="visual-nodes"><span>Sample data</span><span>Groq + LangGraph</span><span>Valid XI</span></div>
+  </div>
+  <small class="project-type">Independent project · AI engineering · Live demo</small>
+  <h3>Dream11 Genie</h3>
+  <p class="project-summary">An AI-powered fantasy cricket XI generator built with Python, Groq and LangGraph. It uses clearly labelled sample player data, then applies deterministic validation so generated teams satisfy the configured selection rules.</p>
+  <div class="project-stat"><strong>Two learning paths</strong><span>Simple demo for a direct flow · LangGraph mode for the graph-based workflow</span></div>
+  <ul class="tech-tags"><li>Python</li><li>Streamlit</li><li>Groq</li><li>LangGraph</li><li>Deterministic validation</li></ul>
+  <details class="project-details">
+    <summary>Engineering details</summary>
+    <ul>
+      <li>Uses sample data for demonstration and learning; it does not use live match or official Dream11 data.</li>
+      <li>The Simple demo shows the direct generation experience, while LangGraph learning mode exposes the graph-based orchestration flow.</li>
+      <li>Separates probabilistic team generation from deterministic checks that enforce the configured XI composition rules.</li>
+    </ul>
+  </details>
+  <div class="project-links"><a class="text-link" href="https://dream11-genie.streamlit.app/" target="_blank" rel="noopener noreferrer">Try the live sample-data demo <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/DennyM55/dream11-genie" target="_blank" rel="noopener noreferrer">View source <span aria-hidden="true">↗</span></a></div>
+</article>
+
 <article class="project-card" data-project data-categories="backend media" data-featured="true" id="project-streamhub">
   <div class="project-visual project-visual--media" aria-hidden="true">
     <span class="visual-kicker">Media systems</span>

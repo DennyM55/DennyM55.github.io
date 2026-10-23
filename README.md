@@ -31,7 +31,7 @@ The design uses CSS and inline SVG for its decorative illustrations. Typography 
 
 ## Browsing and accessibility
 
-- The default enhanced project view shows four featured projects. Filters offer **All work**, **Java & backend**, **AI**, **Media** and **Enterprise** views across the full project collection.
+- The default enhanced project view shows featured projects. Filters offer **All work**, **Java & backend**, **AI Engineering**, **Media** and **Enterprise** views across the full project collection.
 - Every project is included directly in the HTML. With JavaScript disabled, all projects and the navigation remain available; inactive filter controls stay hidden.
 - Native `details`/`summary` elements expose engineering details without requiring JavaScript.
 - Project filters expose their selected state with `aria-pressed`, and the visible project count is announced through a polite live region.

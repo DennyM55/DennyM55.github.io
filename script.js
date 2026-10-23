@@ -55,6 +55,9 @@
     count.textContent = `${visible} of ${projects.length} projects`;
   };
   buttons.forEach(button => button.addEventListener('click', () => filterProjects(button.dataset.filter)));
+  document.querySelectorAll('[data-filter-link]').forEach(link => {
+    link.addEventListener('click', () => filterProjects(link.dataset.filterLink));
+  });
 
   // Direct links to any project must reveal it, including after back/forward navigation.
   const revealLinkedProject = () => {
@@ -69,7 +72,7 @@
       if (project?.hidden) filterProjects('all');
     });
   });
-  filterProjects('featured');
+  filterProjects(window.location.hash === '#project-dream11-genie' ? 'ai' : 'featured');
   toolbar.hidden = false;
   window.addEventListener('hashchange', revealLinkedProject);
   revealLinkedProject();
